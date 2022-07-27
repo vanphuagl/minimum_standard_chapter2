@@ -1,0 +1,24 @@
+/* --------------------------------- PRESENT -------------------------------- */
+.p-present {
+    .l-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    &__wrap {
+        padding-top: 120px;
+    }
+
+    &__wrap2 {
+        padding-top: 88px;
+    }
+
+    &__imgmobile {
+        display: none;
+    }
+
+    &__img,
+    &__imgmobile {
+        width: 100%;
+    }
+}
