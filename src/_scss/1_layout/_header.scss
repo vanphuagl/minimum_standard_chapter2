@@ -1,0 +1,51 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    &__wrap {
+        background-image: url("../../assets/img/bg-header.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 1052px;
+    }
+
+    &__content {
+        @include mid();
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 434px;
+        height: 461px;
+        text-align: center;
+        padding-top: 114px;
+
+        p {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: "Noto Serif JP";
+            color: #231815;
+            margin-top: 43px;
+            margin-bottom: 31px;
+            margin-left: -20px;
+            letter-spacing: -1.5px;
+            display: inline-block;
+
+            span {
+                display: inline-block;
+                margin-left: -10px;
+                letter-spacing: -2px;
+            }
+        }
+    }
+
+    &__logo {
+        img {
+            width: 227px;
+            height: 88px;
+        }
+    }
+
+    &__open {
+        img {
+            margin-left: 15px;
+        }
+    }
+}
