@@ -7,6 +7,10 @@
         background-size: cover;
         background-position: center;
         height: 1052px;
+
+        @include sp {
+            height: 442px;
+        }
     }
 
     &__content {
@@ -34,6 +38,25 @@
                 letter-spacing: -2px;
             }
         }
+
+        /* ------------------------------ max-width: 767 ----------------------------- */
+        @include sp {
+            width: 217px;
+            height: 230.5px;
+            padding-top: 57px;
+
+            p {
+                margin-top: 21.5px;
+                margin-bottom: 15.5px;
+                margin-left: -10px;
+                letter-spacing: -1px;
+
+                span {
+                    margin-left: -5px;
+                    letter-spacing: -1px;
+                }
+            }
+        }
     }
 
     &__logo {
@@ -41,11 +64,27 @@
             width: 227px;
             height: 88px;
         }
+
+        @include sp {
+            display: inline-block;
+
+            img {
+                width: 113.5px;
+                height: 44px;
+            }
+        }
     }
 
     &__open {
         img {
             margin-left: 15px;
+        }
+
+        @include sp {
+            img {
+                width: 161px;
+                height: 28px;
+            }
         }
     }
 }
