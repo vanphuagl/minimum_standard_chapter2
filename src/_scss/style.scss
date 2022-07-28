@@ -10,6 +10,7 @@
 .sp-only {
     display: none;
 }
+
 @include sp {
     .pc-only {
         display: none;
@@ -34,8 +35,12 @@
 @import "2_component/merit";
 @import "2_component/point";
 @import "2_component/present";
+@import "2_component/design";
 @import "2_component/contact";
-
+@import "2_component/plan";
+@import "2_component/finance";
+@import "2_component/web";
+@import "2_component/access";
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Project .p-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/

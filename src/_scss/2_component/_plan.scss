@@ -1,3 +1,113 @@
 /* ---------------------------------- PLAN ---------------------------------- */
 .p-plan {
+    .l-container {
+        max-width: 1264px;
+        margin: auto;
+    }
+
+    &__wrap {
+        padding-top: 130px;
+        padding-bottom: 92px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 4.8rem;
+        font-weight: 300;
+        font-family: "Oswald";
+        color: $black-cl;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 4.5px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 57px;
+            height: 1px;
+            background: #c7c7c7;
+            left: 50%;
+            bottom: -36px;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__img {
+        display: flex;
+        flex-direction: space-between;
+        padding-top: 115px;
+
+        img {
+            margin: auto;
+        }
+    }
+
+    /* ---------------------------------- INFO ---------------------------------- */
+    &__info {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        margin-bottom: 90px;
+    }
+
+    &__item {
+        display: flex;
+        padding: 0 15px;
+
+        h3,
+        p {
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: #231815;
+        }
+
+        h3 {
+            margin-right: 15px;
+        }
+    }
+
+    /* --------------------------------- CONTENT -------------------------------- */
+    &__content {
+        padding: 0 34px;
+    }
+
+    &__detail {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        height: 81px;
+
+        h3,
+        p {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #231815;
+            text-align: left;
+        }
+
+        h3 {
+            width: 23%;
+        }
+
+        p {
+            padding: 0 10px;
+        }
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        margin: 0 -10px;
+
+        p {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #231815;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0 10px;
+            margin: 0 10px;
+        }
+    }
 }

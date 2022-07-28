@@ -1,3 +1,169 @@
 /* --------------------------------- DESIGN --------------------------------- */
 .p-design {
+    &__wrap {
+        padding-top: 123px;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 1205px;
+            height: 527px;
+            background-color: $gray-cl;
+            position: absolute;
+            right: 0;
+            bottom: 170px;
+            z-index: -1;
+            max-width: 75%;
+        }
+    }
+
+    &__img {
+        width: 1440px;
+        height: 772px;
+        position: relative;
+        max-width: 75%;
+
+        >img {
+            width: 100%;
+            height: 683px;
+            position: absolute;
+
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+    }
+
+    &__prev,
+    &__next {
+        width: 53px;
+        height: 53px;
+        cursor: pointer;
+        border: unset;
+        outline: none;
+        box-shadow: 0 0 4px 1px rgba(0, 0, 0, 26%);
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__next {
+        margin-left: 20px;
+    }
+
+    &__content {
+        max-width: 1200px;
+        height: 500px;
+        margin: auto;
+        padding-left: 5px;
+    }
+
+    &__heading {
+        font-size: 4.8rem;
+        font-weight: 300;
+        font-family: "Oswald";
+        color: $black-cl;
+        text-transform: uppercase;
+        position: relative;
+        line-height: 1;
+        letter-spacing: 4.5px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 57px;
+            height: 1px;
+            background-color: #c7c7c7;
+            left: 0;
+            bottom: -40px;
+        }
+    }
+
+    &__title {
+        margin-top: 67px;
+        margin-bottom: 36px;
+
+        h3 {
+            display: block;
+            font-size: 2.7rem;
+            font-weight: 400;
+            color: #231815;
+            line-height: 3.7rem;
+
+            &:first-child {
+                letter-spacing: 0.6px;
+            }
+        }
+    }
+
+    &__info {
+        p {
+            display: block;
+            font-size: 1.9rem;
+            font-weight: 300;
+            color: #231815;
+            line-height: 3.4rem;
+        }
+    }
+
+    &__video {
+        position: absolute;
+        bottom: 0;
+        right: 84px;
+
+        iframe {
+            width: 702px;
+            height: 390px;
+            border: unset;
+            outline: none;
+            max-width: 100%;
+        }
+    }
+
+    /* ------------------------------ ANIMTE SLICK ------------------------------ */
+    .is-rightleft {
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+
+        &.is-active {
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .is-leftright {
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+
+        &.is-active {
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .is-topdown {
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+
+        &.is-active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
