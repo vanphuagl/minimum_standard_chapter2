@@ -24,4 +24,22 @@
         position: relative;
         letter-spacing: 4.4px;
     }
+
+    @include sp {
+        padding-top: 20px;
+        
+        .l-container {
+            padding: 0 28px;
+            max-width: 375px;
+        }
+
+        &__wrap {
+            height: 142px;
+        }
+
+        &__title {
+            line-height: 142px;
+            letter-spacing: 2.2px;
+        }
+    }
 }

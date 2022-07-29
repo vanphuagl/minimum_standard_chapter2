@@ -1,207 +1,209 @@
 /* ---------------------------------- PLAN ---------------------------------- */
 .p-plan {
-  .l-container {
-    max-width: 1264px;
-    margin: auto;
-    position: relative;
-  }
-
-  @include sp {
-    max-width: 375px;
-  }
-
-  &__wrap {
-    padding-top: 130px;
-    padding-bottom: 92px;
-
-    @include sp {
-      padding-top: 65px;
-      padding-bottom: 46px;
-    }
-  }
-
-  &__title {
-    text-align: center;
-    font-size: 4.8rem;
-    font-weight: 300;
-    font-family: "Oswald";
-    color: $black-cl;
-    text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: 4.5px;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 57px;
-      height: 1px;
-      background: #c7c7c7;
-      left: 50%;
-      bottom: -36px;
-      transform: translateX(-50%);
+    .l-container {
+        max-width: 1264px;
+        margin: auto;
+        position: relative;
     }
 
     @include sp {
-      letter-spacing: 2.25px;
-
-      &::after {
-        width: 28.5px;
-        bottom: -18px;
-      }
-    }
-  }
-
-  &__img {
-    display: flex;
-    flex-direction: space-between;
-    padding-top: 115px;
-
-    img {
-      margin: auto;
+        .l-container {
+            max-width: 375px;
+        }
     }
 
-    @include sp {
-      margin-top: 57.5px;
-      padding: 0 10px;
-    }
-  }
+    &__wrap {
+        padding-top: 130px;
+        padding-bottom: 92px;
 
-  &__1f {
-    @include sp {
-      > img:last-child {
-        width: 26px;
-        height: 26px;
-        margin-right: 0;
-        margin-left: 8px;
-      }
-    }
-  }
-
-  &__2f {
-    @include sp {
-      > img:last-child {
-        width: 26px;
-        height: 26px;
-        margin-right: 0;
-        margin-left: 28px;
-        margin-top: -5px;
-      }
-    }
-  }
-
-  /* ---------------------------------- INFO ---------------------------------- */
-  &__info {
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 90px;
-
-    @include sp {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 5px;
-      margin-top: 39px;
-      margin-bottom: 45px;
-    }
-  }
-
-  &__item {
-    display: flex;
-    padding: 0 15px;
-
-    h3,
-    p {
-      font-size: 2.2rem;
-      font-weight: 400;
-      color: #231815;
+        @include sp {
+            padding-top: 65px;
+            padding-bottom: 46px;
+        }
     }
 
-    h3 {
-      margin-right: 15px;
+    &__title {
+        text-align: center;
+        font-size: 4.8rem;
+        font-weight: 300;
+        font-family: "Oswald";
+        color: $black-cl;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 4.5px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 57px;
+            height: 1px;
+            background: #c7c7c7;
+            left: 50%;
+            bottom: -36px;
+            transform: translateX(-50%);
+        }
+
+        @include sp {
+            letter-spacing: 2.25px;
+
+            &::after {
+                width: 28.5px;
+                bottom: -18px;
+            }
+        }
     }
 
-    @include sp {
-      width: 100%;
-      justify-content: center;
+    &__img {
+        display: flex;
+        flex-direction: space-between;
+        padding-top: 115px;
 
-      h3,
-      p {
-        font-size: 2.3rem;
-      }
+        img {
+            margin: auto;
+        }
 
-      h3 {
-        margin-top: 2px;
-      }
-    }
-  }
-
-  /* --------------------------------- CONTENT -------------------------------- */
-  &__content {
-    padding: 0 34px;
-
-    @include sp {
-      padding: 0 17px;
-    }
-  }
-
-  &__detail {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    height: 81px;
-
-    h3,
-    p {
-      font-size: 2.5rem;
-      font-weight: 400;
-      color: #231815;
-      text-align: left;
+        @include sp {
+            margin-top: 57.5px;
+            padding: 0 10px;
+        }
     }
 
-    h3 {
-      width: 23%;
+    &__1f {
+        @include sp {
+            >img:last-child {
+                width: 26px;
+                height: 26px;
+                margin-right: 0;
+                margin-left: 8px;
+            }
+        }
     }
 
-    p {
-      padding: 0 10px;
+    &__2f {
+        @include sp {
+            >img:last-child {
+                width: 26px;
+                height: 26px;
+                margin-right: 0;
+                margin-left: 28px;
+                margin-top: -5px;
+            }
+        }
     }
 
-    @include sp {
-      height: fit-content;
+    /* ---------------------------------- INFO ---------------------------------- */
+    &__info {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        margin-bottom: 90px;
 
-      h3 {
-        min-width: 33%;
-        align-self: center;
-        line-height: 40px;
-      }
-    }
-  }
-
-  &__group {
-    display: flex;
-    align-items: center;
-    margin: 0 -10px;
-
-    p {
-      font-size: 2rem;
-      font-weight: 400;
-      color: #231815;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 0 10px;
-      margin: 0 10px;
+        @include sp {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 39px;
+            margin-bottom: 45px;
+        }
     }
 
-    @include sp {
-      margin: 10px -5px;
-      flex-wrap: wrap;
+    &__item {
+        display: flex;
+        padding: 0 15px;
 
-      p {
-        padding: 0 5px;
-        border-radius: 2.5px;
-        margin: 3px;
-      }
+        h3,
+        p {
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: #231815;
+        }
+
+        h3 {
+            margin-right: 15px;
+        }
+
+        @include sp {
+            width: 100%;
+            justify-content: center;
+
+            h3,
+            p {
+                font-size: 2.3rem;
+            }
+
+            h3 {
+                margin-top: 2px;
+            }
+        }
     }
-  }
+
+    /* --------------------------------- CONTENT -------------------------------- */
+    &__content {
+        padding: 0 34px;
+
+        @include sp {
+            padding: 0 17px;
+        }
+    }
+
+    &__detail {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        height: 81px;
+
+        h3,
+        p {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #231815;
+            text-align: left;
+        }
+
+        h3 {
+            width: 23%;
+        }
+
+        p {
+            padding: 0 10px;
+        }
+
+        @include sp {
+            height: fit-content;
+
+            h3 {
+                min-width: 33%;
+                align-self: center;
+                line-height: 40px;
+            }
+        }
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        margin: 0 -10px;
+
+        p {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #231815;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0 10px;
+            margin: 0 10px;
+        }
+
+        @include sp {
+            margin: 10px -5px;
+            flex-wrap: wrap;
+
+            p {
+                padding: 0 5px;
+                border-radius: 2.5px;
+                margin: 3px;
+            }
+        }
+    }
 }
