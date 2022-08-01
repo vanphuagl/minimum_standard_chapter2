@@ -15,7 +15,7 @@
     }
 
     @include mq(xl, max) {
-        max-width: 750px;
+        // max-width: 750px;
     }
 
     @include sp {
@@ -149,7 +149,7 @@
     &__info {
         background-color: $white-cl;
         height: 432px;
-        padding: 91px 80px 90px 80px;
+        padding: 91px 70px 90px;
         position: relative;
         font-family: "Noto Serif JP";
         color: #231815;
@@ -282,7 +282,7 @@
 
     /* ------------------------------- MEDIA QUERY ------------------------------ */
     @media screen and (-ms-high-contrast: none),
-    (-ms-high-contrast: active) {
+        (-ms-high-contrast: active) {
 
         /* IE10+ CSS */
         &__label {

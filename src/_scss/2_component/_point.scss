@@ -1,157 +1,258 @@
 /* ---------------------------------- POINT --------------------------------- */
 .p-point {
-    padding-top: 140px;
+  padding-top: 140px;
+
+  .l-container {
+    max-width: 1800px;
+    margin: auto;
+    padding: 0 30px;
+  }
+
+  @include mq(xl, max) {
+    padding-top: 40px;
 
     .l-container {
-        max-width: 1800px;
-        margin: auto;
-        padding: 0 30px;
+      background-color: $gray-cl;
+      z-index: 0;
+    }
+  }
+  @include mq(lg, max) {
+    padding-top: 40px;
+
+    .l-container {
+      background-color: $gray-cl;
+      z-index: 0;
+    }
+  }
+
+  @include sp {
+    padding-top: 20px;
+
+    .l-container {
+      padding: 0;
+      max-width: 375px;
+    }
+  }
+
+  /* --------------------------------- HEADING -------------------------------- */
+  &__wrap {
+    position: relative;
+    background-color: $gray-cl;
+    height: 755px;
+    padding: 0 68px 77px;
+    z-index: -1;
+
+    h2 {
+      font-family: "Oswald";
+      font-size: 8.3rem;
+      font-weight: 300;
+      color: $black-cl;
+      letter-spacing: 8.2px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-45px, -80px);
+    }
+
+    h3 {
+      font-size: 3.4rem;
+      font-weight: 400;
+      font-family: "Noto Serif JP";
+      color: #231815;
+      text-align: right;
+      line-height: 147px;
+      height: 147px;
+      margin-right: -16px;
+
+      span {
+        display: inline-block;
+      }
+    }
+
+    @include mq(md-max, max) {
+      padding-left: 0;
+      padding-right: 0;
+      height: auto;
+
+      h2 {
+        transform: translate(-20px, -45px);
+      }
+
+      h3 {
+        margin-right: 20px;
+      }
+    }
+    @include mq(xl, max) {
+      padding: 0 20px;
+      padding-bottom: 300px;
+      max-width: 750px;
+      margin: auto;
+
+      h2 {
+        font-size: 6.1rem;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+    @include mq(lg, max) {
+      padding: 0 20px;
+      padding-bottom: 300px;
+      max-width: 750px;
+      margin: auto;
+
+      h2 {
+        font-size: 6.1rem;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+      }
     }
 
     @include sp {
-        padding-top: 20px;
+      padding: 0 10px;
+      padding-bottom: 120px;
+      height: auto;
 
-        .l-container {
-            padding: 0;
-            max-width: 375px;
-        }
+      h2 {
+        font-size: 6.1rem;
+        transform: translate(-10px, -20px);
+        letter-spacing: 4.1px;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        margin-right: 0;
+        line-height: 73.5px;
+        height: 73.5px;
+      }
+    }
+  }
+
+  &__bus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(45%, -55%);
+    z-index: -1;
+
+    @include mq(md-max, max) {
+      transform: translate(10%, -55%);
+    }
+    @include mq(xl, max) {
+      width: fit-content;
+      height: fit-content;
+      top: auto;
+      left: auto;
+      right: 40px;
+      bottom: -250px;
+    }
+    @include mq(lg, max) {
+      width: fit-content;
+      height: fit-content;
+      top: auto;
+      left: auto;
+      right: 40px;
+      bottom: -250px;
     }
 
-    /* --------------------------------- HEADING -------------------------------- */
-    &__wrap {
-        position: relative;
-        background-color: $gray-cl;
-        height: 755px;
-        padding: 0 68px 77px;
-        z-index: -1;
+    @include sp {
+      width: 205px;
+      height: 136px;
+      top: auto;
+      left: auto;
+      right: 90px;
+      bottom: -110px;
+    }
+  }
 
-        h2 {
-            font-family: "Oswald";
-            font-size: 8.3rem;
-            font-weight: 300;
-            color: $black-cl;
-            letter-spacing: 8.2px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            transform: translate(-45px, -80px);
-        }
+  /* ---------------------------------- ITEM ---------------------------------- */
+  &__list {
+    display: flex;
 
-        h3 {
-            font-size: 3.4rem;
-            font-weight: 400;
-            font-family: "Noto Serif JP";
-            color: #231815;
-            text-align: right;
-            line-height: 147px;
-            height: 147px;
-            margin-right: -16px;
+    @include mq(xl, max) {
+      flex-wrap: wrap;
+      margin: -10px;
+    }
+    @include mq(lg, max) {
+      flex-wrap: wrap;
+      margin: -10px;
+    }
+    @include sp {
+      flex-wrap: wrap;
+      margin: -5px;
+    }
+  }
 
-            span {
-                display: inline-block;
-            }
-        }
+  &__listwrap {
+    width: 25%;
+    padding: 0 12px;
 
-        @include sp {
-            padding: 0 10px;
-            padding-bottom: 120px;
-            height: auto;
+    @include mq(md-max, max) {
+      padding: 0 5px;
+      height: fit-content;
+    }
+    @include mq(xl, max) {
+      width: 50%;
+      height: auto;
+      padding: 10px;
+    }
+    @include mq(lg, max) {
+      width: 50%;
+      height: auto;
+      padding: 10px;
+    }
+    @include sp {
+      width: 50%;
+      height: auto;
+      padding: 5px;
+    }
+  }
 
-            h2 {
-                font-size: 6.1rem;
-                transform: translate(-10px, -20px);
-                letter-spacing: 4.1px;
-            }
+  &__item {
+    background-color: $white-cl;
+    height: 531px;
+    padding: 20px;
 
-            h3 {
-                font-size: 2.5rem;
-                margin-right: 0;
-                line-height: 73.5px;
-                height: 73.5px;
-            }
-        }
+    img {
+      width: 337px;
+      max-width: 100%;
     }
 
-    &__bus {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(45%, -55%);
-        z-index: -1;
-
-        @include sp {
-            width: 205px;
-            height: 136px;
-            top: auto;
-            left: auto;
-            right: 90px;
-            bottom: -110px;
-        }
+    @include sp {
+      height: 239px;
+      max-height: 100%;
+      padding: 10px;
     }
+  }
 
-    /* ---------------------------------- ITEM ---------------------------------- */
-    &__list {
-        display: flex;
+  &__title {
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: #231815;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    line-height: 1.2;
 
-        @include sp {
-            flex-wrap: wrap;
-            margin: -5px;
-        }
+    @include sp {
+      font-size: 2.2rem;
+      letter-spacing: -0.2px;
+      margin-top: 12.5px;
+      margin-bottom: 6px;
     }
+  }
 
-    &__listwrap {
-        width: 25%;
-        padding: 0 12px;
+  &__info {
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: #231815;
+    line-height: 2.7rem;
+    letter-spacing: 0.4px;
 
-        @include sp {
-            width: 50%;
-            height: auto;
-            padding: 5px;
-        }
+    @include sp {
+      letter-spacing: 0.2px;
     }
-
-    &__item {
-        background-color: $white-cl;
-        height: 531px;
-        padding: 20px;
-
-        img {
-            width: 337px;
-            max-width: 100%;
-        }
-
-        @include sp {
-            height: 239px;
-            max-height: 100%;
-            padding: 10px;
-        }
-    }
-
-    &__title {
-        font-size: 2.3rem;
-        font-weight: 500;
-        color: #231815;
-        margin-top: 25px;
-        margin-bottom: 12px;
-        line-height: 1.2;
-
-        @include sp {
-            font-size: 2.2rem;
-            letter-spacing: -0.2px;
-            margin-top: 12.5px;
-            margin-bottom: 6px;
-        }
-    }
-
-    &__info {
-        font-size: 1.9rem;
-        font-weight: 300;
-        color: #231815;
-        line-height: 2.7rem;
-        letter-spacing: 0.4px;
-
-        @include sp {
-            letter-spacing: 0.2px;
-        }
-    }
+  }
 }
