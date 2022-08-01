@@ -11,11 +11,15 @@
     }
 
     @include mq(md-max, max) {
-        max-width: 1200px;
+        .l-container {
+            max-width: 1200px;
+        }
     }
 
     @include mq(xl, max) {
-        // max-width: 750px;
+        .l-container {
+            max-width: 750px;
+        }
     }
 
     @include sp {
@@ -35,7 +39,6 @@
         }
 
         @include mq(lg, max) {
-            padding: 0 80px;
         }
 
         @include sp {
@@ -85,14 +88,13 @@
         margin-top: 98px;
         margin-bottom: 46px;
         height: 64px;
-        line-height: 64px;
+        line-height: 2.2;
 
         @include sp {
             padding: 0 29px;
             margin-top: 49px;
             margin-bottom: 23px;
             height: 32px;
-            line-height: 32px;
         }
     }
 
@@ -111,12 +113,9 @@
         }
 
         @include mq(lg, max) {
-            flex-wrap: wrap;
-            margin: -30px;
         }
 
         @include sp {
-            flex-wrap: wrap;
             margin: -15px;
         }
     }
@@ -136,12 +135,9 @@
         }
 
         @include mq(lg, max) {
-            width: 100%;
-            padding: 30px;
         }
 
         @include sp {
-            width: 100%;
             padding: 15px;
         }
     }
@@ -168,8 +164,10 @@
             letter-spacing: 0.5px;
         }
 
+        @include mq(lg, max) {
+        }
         @include sp {
-            padding: 35px 40px 45px;
+            padding: 35px 35px 45px;
             height: 200px;
 
             p {
@@ -281,9 +279,7 @@
     }
 
     /* ------------------------------- MEDIA QUERY ------------------------------ */
-    @media screen and (-ms-high-contrast: none),
-        (-ms-high-contrast: active) {
-
+    @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         /* IE10+ CSS */
         &__label {
             padding-top: 28px;

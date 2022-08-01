@@ -51,7 +51,7 @@
 
         h3 {
             font-size: 2.7rem;
-            line-height: 3.7rem;
+            line-height: 1.4;
             margin-left: 9px;
 
             &:last-child {
@@ -78,10 +78,6 @@
 
             h3 {
                 font-weight: 400;
-
-                &:last-child {
-                    margin-left: 0;
-                }
             }
         }
     }
@@ -150,7 +146,6 @@
 
             li {
                 width: 20%;
-                padding: 10px;
 
                 a {
                     height: 200px;
@@ -159,7 +154,6 @@
         }
 
         @include mq(lg, max) {
-            flex-wrap: wrap;
             margin: -30px;
 
             li {
@@ -173,11 +167,9 @@
         }
 
         @include sp {
-            flex-wrap: wrap;
             margin: -15px;
 
             li {
-                width: 50%;
                 padding: 15px;
 
                 a {
@@ -215,7 +207,7 @@
 
         p {
             font-size: 1.6rem;
-            line-height: 2.8rem;
+            line-height: 1.75;
             margin: 0 -25px;
             margin-top: 13px;
         }
@@ -232,7 +224,6 @@
             }
 
             p {
-                line-height: 2.8rem;
                 margin: 0;
                 margin-top: 20px;
                 position: relative;
@@ -251,10 +242,6 @@
 
         @include sp {
             padding: 7.5px 30px;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
 
             figure {
                 img {
@@ -305,7 +292,6 @@
         }
 
         @include sp {
-            height: fit-content;
             padding: 20px 60px;
             row-gap: 11px;
         }
@@ -337,11 +323,9 @@
         }
 
         @include mq(lg, max) {
-            flex-direction: column;
         }
 
         @include sp {
-            flex-direction: column;
             column-gap: 25px;
             margin-top: 8px;
 
@@ -368,7 +352,6 @@
         }
 
         @include sp {
-            height: auto;
             padding: 15px;
         }
     }
@@ -409,14 +392,6 @@
             li {
                 height: 252px;
             }
-
-            &:last-child {
-                width: 100%;
-
-                li {
-                    width: 50%;
-                }
-            }
         }
 
         @include sp {
@@ -440,11 +415,9 @@
         }
 
         @include mq(lg, max) {
-            width: 50% !important;
         }
 
         @include sp {
-            width: 50% !important;
         }
     }
 
@@ -507,18 +480,6 @@
                 bottom: 0;
                 transform: translateY(50%);
             }
-
-            &.p-lasthidden.p-bottom::before {
-                display: none;
-            }
-
-            &.p-lasthidden.p-left::after {
-                display: none;
-            }
-
-            &.p-bhidden.p-left::after {
-                display: none;
-            }
         }
 
         @include sp {
@@ -526,29 +487,6 @@
                 img {
                     width: 64px;
                 }
-            }
-
-            &.p-bm::before {
-                position: absolute;
-                content: "";
-                height: 1px;
-                background-color: #ccc;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                transform: translateY(50%);
-            }
-
-            &.p-lasthidden.p-bottom::before {
-                display: none;
-            }
-
-            &.p-lasthidden.p-left::after {
-                display: none;
-            }
-
-            &.p-bhidden.p-left::after {
-                display: none;
             }
         }
     }

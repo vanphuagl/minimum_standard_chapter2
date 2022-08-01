@@ -8,7 +8,6 @@
       max-width: 750px;
     }
     @include mq(lg, max) {
-      max-width: 750px;
     }
     @include sp {
       max-width: 375px;
@@ -25,7 +24,7 @@
 
   &__title {
     font-size: 3.6rem;
-    line-height: 4.3rem;
+    line-height: 1.2;
     font-weight: 400;
     text-align: center;
     color: $black-cl;
@@ -193,7 +192,7 @@
     margin-left: auto;
     width: 211px;
     height: 35px;
-    line-height: 35px;
+    line-height: 2.1;
     position: absolute;
     top: 10px;
     right: 0;
@@ -207,7 +206,7 @@
     }
     @include mq(lg, max) {
       height: 45px;
-      line-height: 45px;
+      line-height: 1.8;
       margin-right: 30px;
 
       &--reverse {
@@ -224,7 +223,7 @@
       margin: 0;
       padding: 4px;
       border-radius: 10px;
-      line-height: 18px;
+      line-height: 1.5;
 
       &--reverse {
         p {

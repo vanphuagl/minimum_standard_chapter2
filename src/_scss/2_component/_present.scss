@@ -31,7 +31,6 @@
     }
 
     @include mq(lg, max) {
-      padding-top: 60px;
     }
 
     @include sp {
@@ -49,7 +48,6 @@
     }
 
     @include sp {
-      display: none;
     }
   }
 
@@ -57,7 +55,7 @@
     display: none;
 
     @include mq(xl, max) {
-      display: block;
+      // display: block;
 
       img {
         width: 100%;
@@ -66,14 +64,9 @@
 
     @include mq(lg, max) {
       display: block;
-
-      img {
-        width: 100%;
-      }
     }
 
     @include sp {
-      display: block;
       width: 319px;
       margin: auto;
     }

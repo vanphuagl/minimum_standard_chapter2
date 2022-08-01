@@ -55,9 +55,9 @@ $mq-breakpoints: (
 @mixin mq($breakpoint: md, $rule: min, $subtraction: true) {
     $breakpoint: map_get($mq-breakpoints, $breakpoint);
 
-    @if $rule==max and $subtraction {
-        $breakpoint: $breakpoint - 1;
-    }
+    // @if $rule==max and $subtraction {
+    //     $breakpoint: $breakpoint - 1;
+    // }
 
     @media only screen and (#{$rule}-width: $breakpoint) {
         @content;

@@ -17,12 +17,6 @@
     }
   }
   @include mq(lg, max) {
-    padding-top: 40px;
-
-    .l-container {
-      background-color: $gray-cl;
-      z-index: 0;
-    }
   }
 
   @include sp {
@@ -60,7 +54,7 @@
       font-family: "Noto Serif JP";
       color: #231815;
       text-align: right;
-      line-height: 147px;
+      line-height: 5;
       height: 147px;
       margin-right: -16px;
 
@@ -75,7 +69,7 @@
       height: auto;
 
       h2 {
-        transform: translate(-20px, -45px);
+        transform: translate(-20px, -65px);
       }
 
       h3 {
@@ -97,35 +91,19 @@
       }
     }
     @include mq(lg, max) {
-      padding: 0 20px;
-      padding-bottom: 300px;
-      max-width: 750px;
-      margin: auto;
-
-      h2 {
-        font-size: 6.1rem;
-      }
-
-      h3 {
-        font-size: 2.5rem;
-      }
     }
 
     @include sp {
       padding: 0 10px;
       padding-bottom: 120px;
-      height: auto;
 
       h2 {
-        font-size: 6.1rem;
         transform: translate(-10px, -20px);
         letter-spacing: 4.1px;
       }
 
       h3 {
-        font-size: 2.5rem;
         margin-right: 0;
-        line-height: 73.5px;
         height: 73.5px;
       }
     }
@@ -150,19 +128,11 @@
       bottom: -250px;
     }
     @include mq(lg, max) {
-      width: fit-content;
-      height: fit-content;
-      top: auto;
-      left: auto;
-      right: 40px;
-      bottom: -250px;
     }
 
     @include sp {
       width: 205px;
       height: 136px;
-      top: auto;
-      left: auto;
       right: 90px;
       bottom: -110px;
     }
@@ -177,11 +147,8 @@
       margin: -10px;
     }
     @include mq(lg, max) {
-      flex-wrap: wrap;
-      margin: -10px;
     }
     @include sp {
-      flex-wrap: wrap;
       margin: -5px;
     }
   }
@@ -200,13 +167,8 @@
       padding: 10px;
     }
     @include mq(lg, max) {
-      width: 50%;
-      height: auto;
-      padding: 10px;
     }
     @include sp {
-      width: 50%;
-      height: auto;
       padding: 5px;
     }
   }
@@ -248,7 +210,7 @@
     font-size: 1.9rem;
     font-weight: 300;
     color: #231815;
-    line-height: 2.7rem;
+    line-height: 1.4;
     letter-spacing: 0.4px;
 
     @include sp {

@@ -6,7 +6,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 1052px;
+        // height: 1052px;
+        height: 100vh;
 
         @include mq(lg, max) {
             height: 822px;
