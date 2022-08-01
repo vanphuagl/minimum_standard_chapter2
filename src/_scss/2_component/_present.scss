@@ -1,74 +1,74 @@
 /* --------------------------------- PRESENT -------------------------------- */
 .p-present {
-  .l-container {
-    max-width: 1200px;
-    margin: auto;
+    .l-container {
+        max-width: 1200px;
+        margin: auto;
 
-    @include mq(xl, max) {
-      padding: 0 60px;
+        @include mq(xl, max) {
+            padding: 0 60px;
+        }
+
+        @include sp {
+            max-width: 350px;
+            margin: auto;
+            padding: 0;
+        }
     }
 
-    @include sp {
-      max-width: 350px;
-      margin: auto;
-      padding: 0;
-    }
-  }
+    &__wrap {
+        padding-top: 120px;
 
-  &__wrap {
-    padding-top: 120px;
-
-    @include sp {
-      padding-top: 60px;
-    }
-  }
-
-  &__wrap2 {
-    padding-top: 88px;
-
-    @include mq(xl, max) {
-      padding-top: 60px;
+        @include sp {
+            padding-top: 60px;
+        }
     }
 
-    @include mq(lg, max) {
+    &__wrap2 {
+        padding-top: 88px;
+
+        @include mq(xl, max) {
+            padding-top: 60px;
+        }
+
+        @include mq(lg, max) {
+        }
+
+        @include sp {
+            padding-top: 44px;
+        }
     }
 
-    @include sp {
-      padding-top: 44px;
-    }
-  }
+    &__img {
+        @include mq(xl, max) {
+            display: block;
+        }
 
-  &__img {
-    @include mq(xl, max) {
-      display: block;
-    }
+        @include mq(lg, max) {
+            display: none;
+        }
 
-    @include mq(lg, max) {
-      display: none;
-    }
-
-    @include sp {
-    }
-  }
-
-  &__imgmobile {
-    display: none;
-
-    @include mq(xl, max) {
-      // display: block;
-
-      img {
-        width: 100%;
-      }
+        @include sp {
+        }
     }
 
-    @include mq(lg, max) {
-      display: block;
-    }
+    &__imgmobile {
+        display: none;
 
-    @include sp {
-      width: 319px;
-      margin: auto;
+        @include mq(xl, max) {
+            // display: block;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @include mq(lg, max) {
+            display: block;
+        }
+
+        @include sp {
+            width: 319px;
+            margin: auto;
+        }
     }
-  }
 }

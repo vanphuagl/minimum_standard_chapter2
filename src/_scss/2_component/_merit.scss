@@ -16,7 +16,7 @@
     }
 
     &__wrap {
-        padding-top: 110px;
+        padding-top: 122px;
         text-align: center;
 
         @include mq(md-max, max) {
@@ -34,6 +34,7 @@
         text-align: center;
         font-size: 3.4rem;
         color: #231815;
+        margin-left: 41px;
 
         span {
             font-size: 4.6rem;
@@ -45,6 +46,7 @@
             padding: 0 20px;
             line-height: 1.2;
             font-size: 2.6rem;
+            margin-left: 0;
 
             span {
                 font-size: 3.4rem;
@@ -73,13 +75,15 @@
         color: $black-cl;
         text-align: center;
         letter-spacing: 4.5px;
-        line-height: 1.6;
+        line-height: 2.2;
         margin-bottom: 38px;
+        margin-left: 38px;
         text-transform: uppercase;
 
         @include mq(xl, max) {
             font-size: 2.3rem;
             margin-top: 20px;
+            margin-left: 0;
         }
         @include mq(lg, max) {
         }
@@ -94,16 +98,18 @@
     /* ---------------------------------- ITEM ---------------------------------- */
     &__item {
         display: flex;
-        margin: 0 -40px 36px;
+        margin: 0 -40px 58px;
 
         &--reverse {
             flex-direction: row-reverse;
+            margin: 0 -14px 58px;
         }
 
         @include mq(xl, max) {
             flex-wrap: wrap;
         }
         @include mq(lg, max) {
+            margin: 0 -40px 36px;
         }
         @include sp {
         }
@@ -131,7 +137,8 @@
             font-size: 2.8rem;
             color: #231815;
             position: relative;
-            line-height: 2;
+            line-height: 2.6;
+            margin-left: 11px;
 
             span {
                 display: inline-block;
@@ -145,7 +152,7 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                transform: translate(60%, -80%);
+                transform: translate(67%, -50%);
             }
         }
 
@@ -156,21 +163,55 @@
             color: #231815;
             line-height: 1.6;
             margin-top: 11.5px;
+            margin-left: 11px;
+            letter-spacing: 0.55px;
+        }
+
+        &--reverse {
+            margin-left: 14px;
+            margin-right: -70px;
+        }
+
+        @include mq(xl, max) {
+            margin-left: 0;
+            margin-right: 0;
         }
 
         @include sp {
             padding-left: 60px;
 
             h4 {
+                margin-left: 0;
+
                 img {
                     width: 21px;
                 }
+            }
+
+            p {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__tada {
+        &--reverse {
+            transform: translate(118%, -50%) !important;
+        }
+
+        &--3 {
+            transform: translate(98%, -50%) !important;
+        }
+        @include mq(xl, max) {
+            &--reverse,
+            &--3 {
+                transform: translate(67%, -50%) !important;
             }
         }
     }
 
     &__img {
-        padding: 30px 40px;
+        padding: 19px 29px;
 
         img {
             min-width: 530px;
@@ -197,9 +238,23 @@
 
     &__label {
         text-align: left;
+        margin-top: -16px;
+        margin-left: 11px;
 
+        &--reverse {
+            margin-left: 25px;
+        }
+
+        @include mq(xl, max) {
+            margin-left: 11px;
+
+            &--reverse {
+                margin-left: 0;
+            }
+        }
         @include sp {
             margin-left: 15px;
+            margin-top: 0;
 
             img {
                 width: 45px;

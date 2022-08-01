@@ -1,304 +1,311 @@
 /* --------------------------------- FINANCE -------------------------------- */
 .p-finance {
-    max-width: 1920px;
-    margin: auto;
-    background-color: $gray-cl;
-    padding-top: 105px;
-    padding-bottom: 110px;
+  max-width: 1920px;
+  margin: auto;
+  background-color: $gray-cl;
+  padding-top: 107px;
+  padding-bottom: 110px;
+
+  .l-container {
+    max-width: 1274px;
+  }
+
+  @include mq(md-max, max) {
+    .l-container {
+      max-width: 1200px;
+    }
+  }
+
+  @include mq(xl, max) {
+    .l-container {
+      max-width: 750px;
+    }
+  }
+
+  @include sp {
+    padding-top: 52.5px;
+    padding-bottom: 55px;
 
     .l-container {
-        max-width: 1274px;
+      max-width: 375px;
     }
+  }
 
-    @include mq(md-max, max) {
-        .l-container {
-            max-width: 1200px;
-        }
-    }
+  &__wrap {
+    text-align: center;
 
     @include mq(xl, max) {
-        .l-container {
-            max-width: 750px;
-        }
+      padding: 0 80px;
+    }
+
+    @include mq(lg, max) {
     }
 
     @include sp {
-        padding-top: 52.5px;
-        padding-bottom: 55px;
+      padding: 0 40px;
+    }
+  }
 
-        .l-container {
-            max-width: 375px;
-        }
+  &__title {
+    text-transform: uppercase;
+    font-size: 4.8rem;
+    font-weight: 300;
+    font-family: "Oswald";
+    color: $black-cl;
+    line-height: 1;
+    letter-spacing: 4.5px;
+    position: relative;
+    margin-left: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 57px;
+      height: 1px;
+      background-color: #c7c7c7;
+      left: 50%;
+      bottom: -39px;
+      transform: translateX(-50%);
     }
 
-    &__wrap {
-        text-align: center;
+    @include sp {
+      letter-spacing: 2.25px;
+      margin-left: 0;
 
-        @include mq(xl, max) {
-            padding: 0 80px;
-        }
+      &::after {
+        width: 28.5px;
+        bottom: -20px;
+      }
+    }
+  }
 
-        @include mq(lg, max) {
-        }
+  &__subtitle {
+    display: inline-block;
+    // font-size: 3rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-family: "Noto Serif JP";
+    color: $white-cl;
+    background-color: #231815;
+    padding: 0 58px;
+    margin-top: 98px;
+    margin-bottom: 46px;
+    height: 64px;
+    line-height: 2.2;
+    margin-left: 38px;
+    width: 408px;
 
-        @include sp {
-            padding: 0 40px;
+    @include sp {
+      padding: 0 29px;
+      margin-top: 49px;
+      margin-bottom: 23px;
+      height: 32px;
+      margin-left: 0;
+      width: auto;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin: -32px;
+
+    @include mq(md-max, max) {
+      justify-content: center;
+      margin: -20px;
+    }
+
+    @include mq(xl, max) {
+      flex-wrap: wrap;
+      margin: -30px;
+    }
+
+    @include mq(lg, max) {
+    }
+
+    @include sp {
+      margin: -15px;
+    }
+  }
+
+  &__item {
+    width: 50%;
+    padding: 32px;
+
+    @include mq(md-max, max) {
+      width: 50%;
+      padding: 20px;
+    }
+
+    @include mq(xl, max) {
+      width: 100%;
+      padding: 30px;
+    }
+
+    @include mq(lg, max) {
+    }
+
+    @include sp {
+      padding: 15px;
+    }
+  }
+
+  &__info {
+    background-color: $white-cl;
+    height: 432px;
+    padding: 91px 70px 90px;
+    position: relative;
+    font-family: "Noto Serif JP";
+    color: #231815;
+    text-align: left;
+    font-size: 2.1rem;
+
+    h4 {
+      font-size: 2.6rem;
+      font-weight: bold;
+      margin: 6px 0 0 8px;
+    }
+
+    p {
+      font-weight: 400;
+      line-height: 6.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    @include mq(lg, max) {
+    }
+    @include sp {
+      padding: 35px 35px 45px;
+      height: 200px;
+
+      p {
+        letter-spacing: 0.25px;
+      }
+
+      h4 {
+        margin: 3px 0 15px 4px;
+        text-align: left;
+      }
+    }
+
+    @media screen and (max-width: 374px) {
+      padding: 35px 15px 45px;
+    }
+  }
+
+  &__price {
+    font-size: 9rem;
+    font-weight: bold !important;
+    font-family: "Noto Serif JP";
+    color: #7a89a8;
+    line-height: 1.5;
+    margin-top: -5px;
+    margin-left: 2px;
+    letter-spacing: -0.2px;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 3.6rem;
+      margin-top: 50px;
+      margin-left: 10px;
+    }
+
+    @include sp {
+      margin-top: -2.5px;
+      margin-left: 1px;
+      letter-spacing: -0.1px;
+
+      span {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__label {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #7a89a8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(45px, -15px);
+    padding-top: 31px;
+    font-family: "Noto Serif JP";
+    color: $white-cl;
+    font-weight: bold;
+    text-align: center;
+
+    p {
+      font-size: 3.2rem;
+      line-height: 1.2;
+    }
+
+    h4 {
+      @include mid(true);
+      font-size: 9.6rem;
+      line-height: 1;
+      margin-top: -4px;
+
+      span {
+        font-size: 3.2rem;
+        margin-top: 25px;
+        margin-left: 10px;
+      }
+    }
+
+    img {
+      position: absolute;
+      left: -8px;
+      bottom: 20px;
+    }
+
+    @include sp {
+      width: 100px;
+      height: 100px;
+      transform: translate(22px, -9px);
+      text-align: center;
+      padding-top: 15.5px;
+
+      h4 {
+        margin-top: -2px;
+
+        span {
+          margin-top: 12.5px;
+          margin-left: 5px;
         }
+      }
+
+      img {
+        position: absolute;
+        left: -4px;
+        bottom: 10px;
+        z-index: -1;
+      }
+    }
+  }
+
+  /* ------------------------------- MEDIA QUERY ------------------------------ */
+  @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS */
+    &__label {
+      padding-top: 28px;
+
+      p {
+        line-height: 2.8;
+      }
+
+      h4 {
+        margin-top: -5px;
+
+        span {
+          margin-top: -5px;
+        }
+      }
     }
 
     &__title {
-        text-transform: uppercase;
-        font-size: 4.8rem;
-        font-weight: 300;
-        font-family: "Oswald";
-        color: $black-cl;
-        line-height: 1;
-        letter-spacing: 4.5px;
-        position: relative;
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 57px;
-            height: 1px;
-            background-color: #c7c7c7;
-            left: 50%;
-            bottom: -39px;
-            transform: translateX(-50%);
-        }
-
-        @include sp {
-            letter-spacing: 2.25px;
-
-            &::after {
-                width: 28.5px;
-                bottom: -20px;
-            }
-        }
+      padding-top: 18px;
     }
-
-    &__subtitle {
-        display: inline-block;
-        font-size: 3rem;
-        font-weight: bold;
-        font-family: "Noto Serif JP";
-        color: $white-cl;
-        background-color: #231815;
-        padding: 0 58px;
-        margin-top: 98px;
-        margin-bottom: 46px;
-        height: 64px;
-        line-height: 2.2;
-
-        @include sp {
-            padding: 0 29px;
-            margin-top: 49px;
-            margin-bottom: 23px;
-            height: 32px;
-        }
-    }
-
-    &__list {
-        display: flex;
-        margin: -32px;
-
-        @include mq(md-max, max) {
-            justify-content: center;
-            margin: -20px;
-        }
-
-        @include mq(xl, max) {
-            flex-wrap: wrap;
-            margin: -30px;
-        }
-
-        @include mq(lg, max) {
-        }
-
-        @include sp {
-            margin: -15px;
-        }
-    }
-
-    &__item {
-        width: 50%;
-        padding: 32px;
-
-        @include mq(md-max, max) {
-            width: 50%;
-            padding: 20px;
-        }
-
-        @include mq(xl, max) {
-            width: 100%;
-            padding: 30px;
-        }
-
-        @include mq(lg, max) {
-        }
-
-        @include sp {
-            padding: 15px;
-        }
-    }
-
-    &__info {
-        background-color: $white-cl;
-        height: 432px;
-        padding: 91px 70px 90px;
-        position: relative;
-        font-family: "Noto Serif JP";
-        color: #231815;
-        text-align: left;
-        font-size: 2.1rem;
-
-        h4 {
-            font-size: 2.6rem;
-            font-weight: bold;
-            margin: 6px 0 0 8px;
-        }
-
-        p {
-            font-weight: 400;
-            line-height: 6.9rem;
-            letter-spacing: 0.5px;
-        }
-
-        @include mq(lg, max) {
-        }
-        @include sp {
-            padding: 35px 35px 45px;
-            height: 200px;
-
-            p {
-                letter-spacing: 0.25px;
-            }
-
-            h4 {
-                margin: 3px 0 15px 4px;
-                text-align: left;
-            }
-        }
-
-        @media screen and (max-width: 374px) {
-            padding: 35px 15px 45px;
-        }
-    }
-
-    &__price {
-        font-size: 9rem;
-        font-weight: bold !important;
-        font-family: "Noto Serif JP";
-        color: #7a89a8;
-        line-height: 1.5;
-        margin-top: -5px;
-        margin-left: 2px;
-        letter-spacing: -0.2px;
-        display: flex;
-        align-items: center;
-
-        span {
-            font-size: 3.6rem;
-            margin-top: 50px;
-            margin-left: 10px;
-        }
-
-        @include sp {
-            margin-top: -2.5px;
-            margin-left: 1px;
-            letter-spacing: -0.1px;
-
-            span {
-                margin-top: 20px;
-            }
-        }
-    }
-
-    &__label {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-color: #7a89a8;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(45px, -15px);
-        padding-top: 31px;
-        font-family: "Noto Serif JP";
-        color: $white-cl;
-        font-weight: bold;
-        text-align: center;
-
-        p {
-            font-size: 3.2rem;
-            line-height: 1.2;
-        }
-
-        h4 {
-            @include mid(true);
-            font-size: 9.6rem;
-            line-height: 1;
-            margin-top: -4px;
-
-            span {
-                font-size: 3.2rem;
-                margin-top: 25px;
-                margin-left: 10px;
-            }
-        }
-
-        img {
-            position: absolute;
-            left: -8px;
-            bottom: 20px;
-        }
-
-        @include sp {
-            width: 100px;
-            height: 100px;
-            transform: translate(22px, -9px);
-            text-align: center;
-            padding-top: 15.5px;
-
-            h4 {
-                margin-top: -2px;
-
-                span {
-                    margin-top: 12.5px;
-                    margin-left: 5px;
-                }
-            }
-
-            img {
-                position: absolute;
-                left: -4px;
-                bottom: 10px;
-                z-index: -1;
-            }
-        }
-    }
-
-    /* ------------------------------- MEDIA QUERY ------------------------------ */
-    @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        /* IE10+ CSS */
-        &__label {
-            padding-top: 28px;
-
-            p {
-                line-height: 2.8;
-            }
-
-            h4 {
-                margin-top: -5px;
-
-                span {
-                    margin-top: -5px;
-                }
-            }
-        }
-
-        &__title {
-            padding-top: 18px;
-        }
-    }
+  }
 }

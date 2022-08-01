@@ -32,6 +32,7 @@
     line-height: 1;
     letter-spacing: 4.5px;
     position: relative;
+    margin-left: 10px;
 
     &::after {
       content: "";
@@ -46,6 +47,7 @@
 
     @include sp {
       letter-spacing: 2.25px;
+      margin-left: 0;
 
       &::after {
         width: 28.5px;
@@ -70,6 +72,28 @@
   }
 
   &__1f {
+    img {
+      margin-left: 38px;
+      margin-top: -4px;
+
+      &:last-child {
+        position: relative;
+        top: -12px;
+        left: 34px;
+      }
+    }
+
+    @include mq(xl, max) {
+      img {
+        margin-left: 0;
+        margin-top: 0;
+
+        &:last-child {
+          position: unset;
+        }
+      }
+    }
+
     @include sp {
       > img:last-child {
         width: 26px;
@@ -81,6 +105,30 @@
   }
 
   &__2f {
+    img {
+      margin-left: 26px;
+      margin-top: 11px;
+      margin-right: 7px;
+
+      &:last-child {
+        position: relative;
+        top: -38px;
+        left: 101px;
+      }
+    }
+
+    @include mq(xl, max) {
+      img {
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+
+        &:last-child {
+          position: unset;
+        }
+      }
+    }
+
     @include sp {
       > img:last-child {
         width: 26px;
@@ -96,7 +144,7 @@
   &__info {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 14px;
     margin-bottom: 90px;
 
     @include mq(xl, max) {
@@ -118,6 +166,7 @@
   &__item {
     display: flex;
     padding: 0 15px;
+    position: relative;
 
     h3,
     p {
@@ -130,12 +179,26 @@
       margin-right: 15px;
     }
 
+    &.p-item2 {
+      left: 18px;
+    }
+    &.p-item3 {
+      left: 30px;
+    }
+
     @include mq(xl, max) {
       width: 100%;
       justify-content: center;
 
       h3 {
         margin-top: 4px;
+      }
+
+      &.p-item2 {
+        left: 0;
+      }
+      &.p-item3 {
+        left: 0;
       }
     }
 
@@ -167,7 +230,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ccc;
-    height: 81px;
+    height: 80px;
 
     h3,
     p {
@@ -179,20 +242,32 @@
 
     h3 {
       width: 23%;
+      margin-left: 15px;
+      margin-top: 20px;
     }
 
     p {
       padding: 0 10px;
+      margin-top: 20px;
+      margin-left: -6px;
     }
 
     @include mq(md-max, max) {
       h3 {
         min-width: 33%;
+        margin-left: 0;
+        margin-top: 0;
+      }
+
+      p {
+        margin-left: 0;
+        margin-top: 0;
       }
     }
 
     @include sp {
       height: 40px;
+
       h3 {
         align-self: center;
       }
@@ -202,7 +277,8 @@
   &__group {
     display: flex;
     align-items: center;
-    margin: 0 -10px;
+    margin: 0 -20px;
+    padding-top: 20px;
 
     p {
       font-size: 2rem;
@@ -210,12 +286,20 @@
       color: #231815;
       border: 1px solid #ccc;
       border-radius: 5px;
-      padding: 0 10px;
-      margin: 0 10px;
+      padding: 0px 15px;
+      margin: 0 9px;
+      height: 38px;
     }
 
     @include mq(xl, max) {
       flex-wrap: wrap;
+      margin: 0 -10px;
+      padding-top: 0;
+
+      p {
+        padding: 0 10px;
+        margin: 0 10px;
+      }
     }
 
     @include mq(lg, max) {

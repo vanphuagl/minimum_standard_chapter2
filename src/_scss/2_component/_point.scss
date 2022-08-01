@@ -1,220 +1,227 @@
 /* ---------------------------------- POINT --------------------------------- */
 .p-point {
-  padding-top: 140px;
-
-  .l-container {
-    max-width: 1800px;
-    margin: auto;
-    padding: 0 30px;
-  }
-
-  @include mq(xl, max) {
-    padding-top: 40px;
+    padding-top: 88px;
 
     .l-container {
-      background-color: $gray-cl;
-      z-index: 0;
-    }
-  }
-  @include mq(lg, max) {
-  }
-
-  @include sp {
-    padding-top: 20px;
-
-    .l-container {
-      padding: 0;
-      max-width: 375px;
-    }
-  }
-
-  /* --------------------------------- HEADING -------------------------------- */
-  &__wrap {
-    position: relative;
-    background-color: $gray-cl;
-    height: 755px;
-    padding: 0 68px 77px;
-    z-index: -1;
-
-    h2 {
-      font-family: "Oswald";
-      font-size: 8.3rem;
-      font-weight: 300;
-      color: $black-cl;
-      letter-spacing: 8.2px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-45px, -80px);
+        max-width: 1800px;
+        margin: auto;
+        padding: 0 30px;
     }
 
-    h3 {
-      font-size: 3.4rem;
-      font-weight: 400;
-      font-family: "Noto Serif JP";
-      color: #231815;
-      text-align: right;
-      line-height: 5;
-      height: 147px;
-      margin-right: -16px;
-
-      span {
-        display: inline-block;
-      }
-    }
-
-    @include mq(md-max, max) {
-      padding-left: 0;
-      padding-right: 0;
-      height: auto;
-
-      h2 {
-        transform: translate(-20px, -65px);
-      }
-
-      h3 {
-        margin-right: 20px;
-      }
-    }
     @include mq(xl, max) {
-      padding: 0 20px;
-      padding-bottom: 300px;
-      max-width: 750px;
-      margin: auto;
+        padding-top: 40px;
 
-      h2 {
-        font-size: 6.1rem;
-      }
-
-      h3 {
-        font-size: 2.5rem;
-      }
+        .l-container {
+            background-color: $gray-cl;
+            z-index: 0;
+        }
     }
     @include mq(lg, max) {
     }
 
     @include sp {
-      padding: 0 10px;
-      padding-bottom: 120px;
+        padding-top: 20px;
 
-      h2 {
-        transform: translate(-10px, -20px);
-        letter-spacing: 4.1px;
-      }
-
-      h3 {
-        margin-right: 0;
-        height: 73.5px;
-      }
-    }
-  }
-
-  &__bus {
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(45%, -55%);
-    z-index: -1;
-
-    @include mq(md-max, max) {
-      transform: translate(10%, -55%);
-    }
-    @include mq(xl, max) {
-      width: fit-content;
-      height: fit-content;
-      top: auto;
-      left: auto;
-      right: 40px;
-      bottom: -250px;
-    }
-    @include mq(lg, max) {
+        .l-container {
+            padding: 0;
+            max-width: 375px;
+        }
     }
 
-    @include sp {
-      width: 205px;
-      height: 136px;
-      right: 90px;
-      bottom: -110px;
-    }
-  }
+    /* --------------------------------- HEADING -------------------------------- */
+    &__wrap {
+        position: relative;
+        background-color: $gray-cl;
+        height: 755px;
+        padding: 0 68px 77px;
+        z-index: -1;
 
-  /* ---------------------------------- ITEM ---------------------------------- */
-  &__list {
-    display: flex;
+        h2 {
+            font-family: "Oswald";
+            font-size: 8.3rem;
+            font-weight: 300;
+            color: $black-cl;
+            letter-spacing: 8.2px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(-45px, -80px);
+        }
 
-    @include mq(xl, max) {
-      flex-wrap: wrap;
-      margin: -10px;
-    }
-    @include mq(lg, max) {
-    }
-    @include sp {
-      margin: -5px;
-    }
-  }
+        h3 {
+            font-size: 3.4rem;
+            font-weight: 400;
+            font-family: "Noto Serif JP";
+            color: #231815;
+            text-align: right;
+            line-height: 3.25;
+            height: 147px;
+            margin-right: -25px;
 
-  &__listwrap {
-    width: 25%;
-    padding: 0 12px;
+            span {
+                display: inline-block;
+                font-size: 4.6rem;
+                font-weight: 400;
+                font-family: "Noto Serif JP";
+                color: #252a6d;
+                margin-left: -11px;
+            }
+        }
 
-    @include mq(md-max, max) {
-      padding: 0 5px;
-      height: fit-content;
-    }
-    @include mq(xl, max) {
-      width: 50%;
-      height: auto;
-      padding: 10px;
-    }
-    @include mq(lg, max) {
-    }
-    @include sp {
-      padding: 5px;
-    }
-  }
+        @include mq(md-max, max) {
+            padding-left: 0;
+            padding-right: 0;
+            height: auto;
 
-  &__item {
-    background-color: $white-cl;
-    height: 531px;
-    padding: 20px;
+            h2 {
+                transform: translate(-20px, -65px);
+            }
 
-    img {
-      width: 337px;
-      max-width: 100%;
+            h3 {
+                margin-right: 20px;
+            }
+        }
+        @include mq(xl, max) {
+            padding: 0 20px;
+            padding-bottom: 300px;
+            max-width: 750px;
+            margin: auto;
+
+            h2 {
+                font-size: 6.1rem;
+            }
+
+            h3 {
+                font-size: 2.5rem;
+            }
+        }
+        @include mq(lg, max) {
+        }
+
+        @include sp {
+            padding: 0 10px;
+            padding-bottom: 120px;
+
+            h2 {
+                transform: translate(-10px, -20px);
+                letter-spacing: 4.1px;
+            }
+
+            h3 {
+                margin-right: 0;
+                height: 73.5px;
+            }
+        }
     }
 
-    @include sp {
-      height: 239px;
-      max-height: 100%;
-      padding: 10px;
+    &__bus {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(45%, -55%);
+        z-index: -1;
+
+        @include mq(md-max, max) {
+            transform: translate(10%, -55%);
+        }
+        @include mq(xl, max) {
+            width: fit-content;
+            height: fit-content;
+            top: auto;
+            left: auto;
+            right: 40px;
+            bottom: -250px;
+        }
+        @include mq(lg, max) {
+        }
+
+        @include sp {
+            width: 205px;
+            height: 136px;
+            right: 90px;
+            bottom: -110px;
+        }
     }
-  }
 
-  &__title {
-    font-size: 2.3rem;
-    font-weight: 500;
-    color: #231815;
-    margin-top: 25px;
-    margin-bottom: 12px;
-    line-height: 1.2;
+    /* ---------------------------------- ITEM ---------------------------------- */
+    &__list {
+        display: flex;
 
-    @include sp {
-      font-size: 2.2rem;
-      letter-spacing: -0.2px;
-      margin-top: 12.5px;
-      margin-bottom: 6px;
+        @include mq(xl, max) {
+            flex-wrap: wrap;
+            margin: -10px;
+        }
+        @include mq(lg, max) {
+        }
+        @include sp {
+            margin: -5px;
+        }
     }
-  }
 
-  &__info {
-    font-size: 1.9rem;
-    font-weight: 300;
-    color: #231815;
-    line-height: 1.4;
-    letter-spacing: 0.4px;
+    &__listwrap {
+        width: 25%;
+        padding: 0 12px;
 
-    @include sp {
-      letter-spacing: 0.2px;
+        @include mq(md-max, max) {
+            padding: 0 5px;
+            height: fit-content;
+        }
+        @include mq(xl, max) {
+            width: 50%;
+            height: auto;
+            padding: 10px;
+        }
+        @include mq(lg, max) {
+        }
+        @include sp {
+            padding: 5px;
+        }
     }
-  }
+
+    &__item {
+        background-color: $white-cl;
+        height: 531px;
+        padding: 20px;
+
+        img {
+            width: 337px;
+            max-width: 100%;
+        }
+
+        @include sp {
+            height: 239px;
+            max-height: 100%;
+            padding: 10px;
+        }
+    }
+
+    &__title {
+        font-size: 2.3rem;
+        font-weight: 500;
+        color: #231815;
+        margin-top: 28px;
+        margin-bottom: 17px;
+        line-height: 1.2;
+        margin-left: -2px;
+
+        @include sp {
+            font-size: 2.2rem;
+            letter-spacing: -0.2px;
+            margin-top: 12.5px;
+            margin-bottom: 6px;
+            margin-left: 0;
+        }
+    }
+
+    &__info {
+        font-size: 1.9rem;
+        font-weight: 300;
+        color: #231815;
+        line-height: 1.4;
+        letter-spacing: 0.4px;
+
+        @include sp {
+            letter-spacing: 0.2px;
+        }
+    }
 }
