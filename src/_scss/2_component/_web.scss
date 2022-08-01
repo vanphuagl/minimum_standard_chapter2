@@ -15,6 +15,16 @@
         padding-top: 57px;
         text-align: center;
 
+        @include mq(xl, max) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @include mq(lg, max) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        
         @include sp {
             padding-top: 28.5px;
             padding-left: 20px;
@@ -30,6 +40,7 @@
         h2 {
             font-size: 3.4rem;
             margin-bottom: 15px;
+            font-weight: 400;
 
             span {
                 font-size: 4.6rem;
@@ -45,6 +56,17 @@
 
             &:last-child {
                 margin-left: 34px;
+            }
+        }
+
+        @include mq(xl, max) {
+            h3 {
+                margin-left: 0;
+                font-weight: 400;
+
+                &:last-child {
+                    margin-left: 0;
+                }
             }
         }
 
@@ -114,9 +136,36 @@
             }
         }
 
+        @include mq(md-max, max) {
+            margin: -10px 0;
 
-        @include mq(1600px, max) {
-            border-width: 8px;
+            li {
+                padding: 10px;
+            }
+        }
+
+        @include mq(xl, max) {
+            flex-wrap: wrap;
+            margin: -10px;
+
+            li {
+                width: 20%;
+                padding: 10px;
+
+                a {
+                    height: 200px;
+                }
+            }
+        }
+
+        @include mq(lg, max) {
+            flex-wrap: wrap;
+            margin: -30px;
+
+            li {
+                width: 50%;
+                padding: 30px;
+            }
         }
 
         @include sp {
@@ -167,6 +216,11 @@
         }
 
         @include mq(xl, max) {
+            padding: 30px 10px;
+            height: 100%;
+            @include mid(true);
+            flex-direction: column;
+
             h4 {
                 line-height: 1.2;
                 border-bottom: unset;
@@ -240,6 +294,11 @@
             color: $white-cl;
         }
 
+        @include mq(xl, max) {
+            height: fit-content;
+            padding: 40px 120px;
+        }
+
         @include sp {
             height: fit-content;
             padding: 20px 60px;
@@ -268,6 +327,14 @@
             color: $white-cl;
         }
 
+        @include mq(xl, max) {
+            flex-direction: column;
+        }
+
+        @include mq(lg, max) {
+            flex-direction: column;
+        }
+
         @include sp {
             flex-direction: column;
             column-gap: 25px;
@@ -286,6 +353,14 @@
         padding: 35px;
         display: flex;
         flex-wrap: wrap;
+
+        @include mq(md-max, max) {
+            padding: 30px;
+        }
+
+        @include mq(xl, max) {
+            height: auto;
+        }
 
         @include sp {
             height: auto;
@@ -309,6 +384,36 @@
             position: relative;
         }
 
+        @include mq(xl, max) {
+            width: 100%;
+
+            li {
+                height: 252px;
+            }
+
+            &:last-child {
+                width: 100%;
+
+                li {
+                    width: 50%;
+                }
+            }
+        }
+
+        @include mq(lg, max) {
+            li {
+                height: 252px;
+            }
+
+            &:last-child {
+                width: 100%;
+
+                li {
+                    width: 50%;
+                }
+            }
+        }
+
         @include sp {
             width: 100%;
 
@@ -324,6 +429,14 @@
 
     &__fullitem {
         width: 100% !important;
+
+        @include mq(xl, max) {
+            width: 50% !important;
+        }
+
+        @include mq(lg, max) {
+            width: 50% !important;
+        }
 
         @include sp {
             width: 50% !important;
@@ -362,6 +475,45 @@
             top: 0;
             bottom: 0;
             transform: translateX(-50%);
+        }
+
+        @include mq(xl, max) {
+            &.p-lasthidden.p-bottom::before {
+                display: none;
+            }
+
+            &.p-lasthidden.p-left::after {
+                display: none;
+            }
+
+            &.p-bhidden.p-left::after {
+                display: none;
+            }
+        }
+
+        @include mq(lg, max) {
+            &.p-bm::before {
+                position: absolute;
+                content: "";
+                height: 1px;
+                background-color: #ccc;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transform: translateY(50%);
+            }
+
+            &.p-lasthidden.p-bottom::before {
+                display: none;
+            }
+
+            &.p-lasthidden.p-left::after {
+                display: none;
+            }
+
+            &.p-bhidden.p-left::after {
+                display: none;
+            }
         }
 
         @include sp {

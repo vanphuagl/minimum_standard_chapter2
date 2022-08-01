@@ -8,6 +8,10 @@
         background-position: center;
         height: 1052px;
 
+        @include mq(lg, max) {
+            height: 822px;
+        }
+
         @include sp {
             height: 442px;
         }

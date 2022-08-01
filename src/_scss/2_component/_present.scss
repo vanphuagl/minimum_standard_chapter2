@@ -3,10 +3,28 @@
     .l-container {
         max-width: 1200px;
         margin: auto;
+        
+        @include mq(xl, max) {
+            padding: 0 60px;
+        }
+
+        @include sp {
+            max-width: 350px;
+            margin: auto;
+            padding: 0;
+        }
     }
 
     &__wrap {
         padding-top: 120px;
+
+        @include mq(xl, max) {
+            padding-top: 60px;
+        }
+
+        @include mq(lg, max) {
+            padding-top: 60px;
+        }
 
         @include sp {
             padding-top: 60px;
@@ -22,6 +40,14 @@
     }
 
     &__img {
+        @include mq(xl, max) {
+            display: block;
+        }
+
+        @include mq(lg, max) {
+            display: none;
+        }
+
         @include sp {
             display: none;
         }
@@ -30,15 +56,26 @@
     &__imgmobile {
         display: none;
 
+        @include mq(xl, max) {
+            display: block;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @include mq(lg, max) {
+            display: block;
+
+            img {
+                width: 100%;
+            }
+        }
+
         @include sp {
             display: block;
             width: 319px;
             margin: auto;
         }
     }
-
-    // &__img,
-    // &__imgmobile {
-    //     width: 100%;
-    // }
 }

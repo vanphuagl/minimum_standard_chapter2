@@ -48,7 +48,7 @@ $mq-breakpoints: (
     "xxl": 1240px,
     "xs-max": 599px,
     "sm-max": 959px,
-    "md-max": 1279px,
+    "md-max": 1600px,
     "lg-max": 1919px,
 );
 
@@ -59,7 +59,7 @@ $mq-breakpoints: (
         $breakpoint: $breakpoint - 1;
     }
 
-    @media screen and (#{$rule}-width: $breakpoint) {
+    @media only screen and (#{$rule}-width: $breakpoint) {
         @content;
     }
 }

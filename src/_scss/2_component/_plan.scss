@@ -99,6 +99,18 @@
         margin-top: 80px;
         margin-bottom: 90px;
 
+        @include mq(xl, max) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        @include mq(lg, max) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
         @include sp {
             flex-wrap: wrap;
             justify-content: center;
@@ -121,6 +133,24 @@
 
         h3 {
             margin-right: 15px;
+        }
+
+        @include mq(xl, max) {
+            width: 100%;
+            justify-content: center;
+
+            h3 {
+                margin-top: 4px;
+            }
+        }
+
+        @include mq(lg, max) {
+            width: 100%;
+            justify-content: center;
+
+            h3 {
+                margin-top: 4px;
+            }
         }
 
         @include sp {
@@ -146,13 +176,13 @@
             padding: 0 17px;
         }
     }
-
+    
     &__detail {
         display: flex;
         align-items: center;
         border-bottom: 1px solid #ccc;
         height: 81px;
-
+        
         h3,
         p {
             font-size: 2.5rem;
@@ -160,18 +190,27 @@
             color: #231815;
             text-align: left;
         }
-
+        
         h3 {
             width: 23%;
         }
-
+        
         p {
             padding: 0 10px;
         }
 
-        @include sp {
+        @include mq(md-max, max) {
             height: fit-content;
 
+            h3 {
+                min-width: 33%;
+                line-height: 81px;
+            }
+        }    
+
+        @include sp {
+            height: fit-content;
+            
             h3 {
                 min-width: 33%;
                 align-self: center;
@@ -193,6 +232,14 @@
             border-radius: 5px;
             padding: 0 10px;
             margin: 0 10px;
+        }
+
+        @include mq(xl, max) {
+            flex-wrap: wrap;
+        }
+
+        @include mq(lg, max) {
+            flex-wrap: wrap;
         }
 
         @include sp {
