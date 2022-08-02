@@ -72,6 +72,9 @@
 
         @include mq(lg, max) {
             // max-height: 486px;
+            > img {
+                height: 520px;
+            }
         }
 
         @include sp {

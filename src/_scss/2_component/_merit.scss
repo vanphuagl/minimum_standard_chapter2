@@ -110,9 +110,9 @@
       flex-wrap: wrap;
     }
     @include mq(lg, max) {
-      margin: 0 -40px 16px;
     }
     @include sp {
+      margin: 0 -40px 16px;
     }
   }
 

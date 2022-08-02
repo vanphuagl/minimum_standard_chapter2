@@ -43,7 +43,7 @@
     }
 
     @include sp {
-        padding-top: 20px;
+        padding-top: 19px;
 
         .l-container {
             padding: 0 28px;
@@ -51,11 +51,13 @@
         }
 
         &__wrap {
-            height: 142px;
+            height: 111px;
         }
 
         &__title {
             letter-spacing: 2.2px;
+            margin-top: 4px;
+            margin-left: 1px;
         }
     }
 }
