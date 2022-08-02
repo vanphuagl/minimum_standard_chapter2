@@ -8,7 +8,8 @@
             max-width: 750px;
         }
 
-        @include mq(lg, max) {}
+        @include mq(lg, max) {
+        }
 
         @include sp {
             max-width: 375px;
@@ -19,7 +20,7 @@
         padding-top: 85px;
 
         @include sp {
-            padding-top: 42.5px;
+            padding-top: 48.5px;
         }
     }
 
@@ -44,7 +45,7 @@
         }
 
         @include sp {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
     }
 
@@ -60,10 +61,11 @@
             gap: 70px;
         }
 
-        @include mq(lg, max) {}
+        @include mq(lg, max) {
+        }
 
         @include sp {
-            gap: 35px;
+            gap: 40px;
         }
     }
 
@@ -76,11 +78,15 @@
             padding-left: 0;
         }
 
-        @include mq(xl, max) {}
+        @include mq(xl, max) {
+        }
 
-        @include mq(lg, max) {}
+        @include mq(lg, max) {
+        }
 
-        @include sp {}
+        @include sp {
+            padding-left: 15px;
+        }
     }
 
     &__number {
@@ -121,7 +127,8 @@
                 font-size: 30rem;
 
                 span {
-                    left: 40%;
+                    left: 37%;
+                    font-size: 3.4rem;
                 }
             }
 
@@ -133,11 +140,11 @@
 
         @include sp {
             p {
-                margin-left: 15px;
+                margin-left: 30px;
             }
 
             &--reverse {
-                margin-right: 10px;
+                margin-right: 22px;
             }
         }
     }
@@ -164,11 +171,12 @@
             &--reverse {
                 background-image: url("../../assets/img/hero-bgTextMobile.png");
                 justify-content: flex-end;
+                margin-bottom: 3px;
             }
         }
 
         @include sp {
-            height: 106px;
+            height: 107px;
         }
     }
 
@@ -187,7 +195,8 @@
             font-size: 3.3rem;
         }
 
-        @include mq(lg, max) {}
+        @include mq(lg, max) {
+        }
 
         @include sp {
             margin-top: 0;
@@ -226,9 +235,12 @@
             height: 45px;
             line-height: 1.8;
             margin-right: 30px;
-
+            right: 10px;
+            top: 10px;
+            
             &--reverse {
-                left: 0;
+                left: 11px;
+                top: 10px;
                 margin: 0;
                 margin-left: 25px;
                 margin-right: auto;

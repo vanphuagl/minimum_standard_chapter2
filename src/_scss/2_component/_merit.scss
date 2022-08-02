@@ -1,265 +1,286 @@
 /* ---------------------------------- MERIT --------------------------------- */
 .p-merit {
-    .l-container {
-        max-width: 1200px;
+  .l-container {
+    max-width: 1200px;
 
-        @include mq(xl, max) {
-            padding: 0 60px;
-            max-width: 750px;
-        }
-        @include mq(lg, max) {
-        }
-        @include sp {
-            padding: 0 30px;
-            max-width: 375px;
-        }
+    @include mq(xl, max) {
+      padding: 0 60px;
+      max-width: 750px;
+    }
+    @include mq(lg, max) {
+    }
+    @include sp {
+      padding: 0 30px;
+      max-width: 375px;
+    }
+  }
+
+  &__wrap {
+    padding-top: 122px;
+    text-align: center;
+
+    @include mq(md-max, max) {
+      padding-bottom: 110px;
+    }
+    @include sp {
+      padding: 83px 0 0px;
+    }
+  }
+
+  /* --------------------------------- HEADING -------------------------------- */
+  &__title {
+    font-family: "Noto Sans JP";
+    font-weight: 400;
+    text-align: center;
+    font-size: 3.4rem;
+    color: #231815;
+    margin-left: 41px;
+
+    span {
+      font-size: 4.6rem;
+      color: #252a6d;
+      display: inline-block;
     }
 
-    &__wrap {
-        padding-top: 122px;
-        text-align: center;
+    @include mq(xl, max) {
+      padding: 0 20px;
+      line-height: 1.2;
+      font-size: 2.6rem;
+      margin-left: 0;
 
-        @include mq(md-max, max) {
-            padding-bottom: 110px;
-        }
-        @include sp {
-            padding: 55px 0;
-        }
-    }
-
-    /* --------------------------------- HEADING -------------------------------- */
-    &__title {
-        font-family: "Noto Sans JP";
-        font-weight: 400;
-        text-align: center;
+      span {
         font-size: 3.4rem;
-        color: #231815;
-        margin-left: 41px;
+      }
+    }
+    @include mq(lg, max) {
+      max-width: 460px;
+      margin: auto;
+      padding: 0 45px;
 
-        span {
-            font-size: 4.6rem;
-            color: #252a6d;
-            display: inline-block;
-        }
-
-        @include mq(xl, max) {
-            padding: 0 20px;
-            line-height: 1.2;
-            font-size: 2.6rem;
-            margin-left: 0;
-
-            span {
-                font-size: 3.4rem;
-            }
-        }
-        @include mq(lg, max) {
-            max-width: 460px;
-            margin: auto;
-
-            span {
-                font-size: 3.5rem;
-            }
-        }
-
-        @include sp {
-            //   max-width: 230px;
-            margin: auto;
-            font-size: 2.6rem;
-        }
+      span {
+        font-size: 3.5rem;
+      }
     }
 
-    &__subtitle {
-        font-size: 4.8rem;
-        font-weight: 300;
-        font-family: "Oswald";
-        color: $black-cl;
-        text-align: center;
-        letter-spacing: 4.5px;
-        line-height: 2.2;
-        margin-bottom: 38px;
-        margin-left: 38px;
-        text-transform: uppercase;
+    @include sp {
+      //   max-width: 230px;
+      margin: auto;
+      font-size: 2.6rem;
+    }
+  }
 
-        @include mq(xl, max) {
-            font-size: 2.3rem;
-            margin-top: 20px;
-            margin-left: 0;
-        }
-        @include mq(lg, max) {
-        }
+  &__subtitle {
+    font-size: 4.8rem;
+    font-weight: 300;
+    font-family: "Oswald";
+    color: $black-cl;
+    text-align: center;
+    letter-spacing: 4.5px;
+    line-height: 2.2;
+    margin-bottom: 38px;
+    margin-left: 38px;
+    text-transform: uppercase;
 
-        @include sp {
-            margin-top: 10px;
-            letter-spacing: 2.25px;
-            margin-bottom: 19px;
-        }
+    @include mq(xl, max) {
+      font-size: 2.3rem;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+    @include mq(lg, max) {
     }
 
-    /* ---------------------------------- ITEM ---------------------------------- */
-    &__item {
-        display: flex;
-        margin: 0 -40px 58px;
+    @include sp {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+  }
 
-        &--reverse {
-            flex-direction: row-reverse;
-            margin: 0 -14px 58px;
-        }
+  /* ---------------------------------- ITEM ---------------------------------- */
+  &__item {
+    display: flex;
+    margin: 0 -40px 58px;
 
-        @include mq(xl, max) {
-            flex-wrap: wrap;
-        }
-        @include mq(lg, max) {
-            margin: 0 -40px 36px;
-        }
-        @include sp {
-        }
+    &--reverse {
+      flex-direction: row-reverse;
+      margin: 0 -14px 58px;
     }
 
-    &__info {
-        padding: 0 40px;
+    @include mq(xl, max) {
+      flex-wrap: wrap;
+    }
+    @include mq(lg, max) {
+      margin: 0 -40px 16px;
+    }
+    @include sp {
+    }
+  }
 
-        @include mq(xl, max) {
-            width: 100%;
-        }
-        @include mq(lg, max) {
-        }
-        @include sp {
-        }
+  &__info {
+    padding: 0 40px;
+
+    @include mq(xl, max) {
+      width: 100%;
+    }
+    @include mq(lg, max) {
+    }
+    @include sp {
+      padding: 0 34px;
+    }
+  }
+
+  &__content {
+    text-align: left;
+    padding-left: 85px;
+    font-weight: bold;
+
+    h4 {
+      display: inline-block;
+      font-size: 2.8rem;
+      color: #231815;
+      position: relative;
+      line-height: 2.6;
+      margin-left: 11px;
+
+      span {
+        display: inline-block;
+        color: #252a6d;
+        font-size: 3.6rem;
+        line-height: 1.2;
+      }
+
+      img {
+        width: 42px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(67%, -50%);
+      }
     }
 
-    &__content {
-        text-align: left;
-        padding-left: 85px;
-        font-weight: bold;
-
-        h4 {
-            display: inline-block;
-            font-size: 2.8rem;
-            color: #231815;
-            position: relative;
-            line-height: 2.6;
-            margin-left: 11px;
-
-            span {
-                display: inline-block;
-                color: #252a6d;
-                font-size: 3.6rem;
-                line-height: 1.2;
-            }
-
-            img {
-                width: 42px;
-                position: absolute;
-                top: 0;
-                right: 0;
-                transform: translate(67%, -50%);
-            }
-        }
-
-        p {
-            font-size: 2.1rem;
-            font-weight: 400;
-            font-family: "Noto Serif JP";
-            color: #231815;
-            line-height: 1.6;
-            margin-top: 11.5px;
-            margin-left: 11px;
-            letter-spacing: 0.55px;
-        }
-
-        &--reverse {
-            margin-left: 14px;
-            margin-right: -70px;
-        }
-
-        @include mq(xl, max) {
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        @include sp {
-            padding-left: 60px;
-
-            h4 {
-                margin-left: 0;
-
-                img {
-                    width: 21px;
-                }
-            }
-
-            p {
-                margin-left: 0;
-            }
-        }
+    p {
+      font-size: 2.1rem;
+      font-weight: 400;
+      font-family: "Noto Serif JP";
+      color: #231815;
+      line-height: 1.6;
+      margin-top: 11.5px;
+      margin-left: 11px;
+      letter-spacing: 0.55px;
     }
 
-    &__tada {
-        &--reverse {
-            transform: translate(118%, -50%) !important;
-        }
-
-        &--3 {
-            transform: translate(98%, -50%) !important;
-        }
-        @include mq(xl, max) {
-            &--reverse,
-            &--3 {
-                transform: translate(67%, -50%) !important;
-            }
-        }
+    &--reverse {
+      margin-left: 14px;
+      margin-right: -70px;
     }
 
-    &__img {
-        padding: 19px 29px;
+    @include mq(xl, max) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @include sp {
+      padding-left: 60px;
+
+      h4 {
+        margin-left: 0;
 
         img {
-            min-width: 530px;
+          width: 21px;
         }
+      }
 
-        @include mq(xl, max) {
-            width: 100%;
+      &--reverse {
+        margin-left: -6px;
+      }
 
-            img {
-                margin: auto;
-                width: 100%;
-            }
-        }
-        @include mq(lg, max) {
-        }
+      p {
+        margin-left: 0;
+        margin-top: 7px;
+        letter-spacing: 0.8px;
+      }
 
-        @include sp {
-            img {
-                width: 290px;
-                min-width: 0;
-            }
-        }
+      &.p-content3 {
+        margin-left: -5px;
+      }
+    }
+  }
+
+  &__tada {
+    &--reverse {
+      transform: translate(118%, -50%) !important;
     }
 
-    &__label {
-        text-align: left;
-        margin-top: -16px;
-        margin-left: 11px;
-
-        &--reverse {
-            margin-left: 25px;
-        }
-
-        @include mq(xl, max) {
-            margin-left: 11px;
-
-            &--reverse {
-                margin-left: 0;
-            }
-        }
-        @include sp {
-            margin-left: 15px;
-            margin-top: 0;
-
-            img {
-                width: 45px;
-                height: 56px;
-            }
-        }
+    &--3 {
+      transform: translate(98%, -50%) !important;
     }
+    @include mq(xl, max) {
+      &--reverse {
+        transform: translate(123%, -50%) !important;
+      }
+    }
+  }
+
+  &__img {
+    padding: 19px 29px;
+
+    img {
+      min-width: 530px;
+    }
+
+    @include mq(xl, max) {
+      width: 100%;
+
+      img {
+        margin: auto;
+        width: 100%;
+      }
+    }
+    @include mq(lg, max) {
+    }
+
+    @include sp {
+      padding: 14px 29px;
+      img {
+        width: 290px;
+        min-width: 0;
+      }
+    }
+  }
+
+  &__label {
+    text-align: left;
+    margin-top: -16px;
+    margin-left: 11px;
+
+    &--reverse {
+      margin-left: 25px;
+    }
+
+    @include mq(xl, max) {
+      margin-left: 11px;
+
+      &--reverse {
+        margin-left: 0;
+      }
+    }
+    @include sp {
+      margin-left: 19px;
+      margin-top: 0px;
+
+      &--reverse {
+        margin-left: 13px;
+        margin-top: -1px;
+      }
+
+      img {
+        width: 45px;
+        height: 56px;
+      }
+
+      &.p-label3 {
+        margin-left: 13px;
+      }
+    }
+  }
 }

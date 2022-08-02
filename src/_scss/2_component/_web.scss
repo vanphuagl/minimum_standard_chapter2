@@ -12,7 +12,7 @@
     }
 
     &__wrap {
-        padding-top: 70px;
+        padding-top: 60px;
         text-align: center;
 
         @include mq(xl, max) {
@@ -39,21 +39,23 @@
 
         h2 {
             font-size: 3.4rem;
-            margin-bottom: 22px;
+            margin-bottom: 15px;
             font-weight: 400;
-            margin-left: 10px;
+            margin-left: -2px;
 
             span {
                 font-size: 4.6rem;
                 color: #252a6d;
                 display: inline-block;
+                font-family: "Kozuka Gothic Pr6N";
             }
         }
 
         h3 {
             font-size: 2.7rem;
             line-height: 1.4;
-            margin-left: 32px;
+            margin-left: 30px;
+            font-weight: 300;
 
             &:last-child {
                 margin-left: 52px;
@@ -89,8 +91,8 @@
 
     /* ----------------------------------- TOP ---------------------------------- */
     &__menu {
-        margin-top: 71px;
-        margin-bottom: 123px;
+        margin-top: 69px;
+        margin-bottom: 119px;
 
         @include sp {
             margin-top: 35.5px;
@@ -310,7 +312,7 @@
         display: flex;
         align-items: center;
         column-gap: 50px;
-        margin-top: 14px;
+        margin-top: 20px;
 
         p {
             font-size: 2.3rem;

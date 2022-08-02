@@ -35,7 +35,7 @@
         }
 
         @include sp {
-            padding-top: 61.5px;
+            padding-top: 50px;
 
             &::after {
                 width: 195px;
@@ -67,7 +67,7 @@
             }
         }
         @include mq(xl, max) {
-            max-width: 95%;
+            max-width: 96%;
         }
 
         @include mq(lg, max) {
@@ -91,6 +91,8 @@
 
         @include sp {
             margin-top: 18px;
+            bottom: 6px;
+            right: 2px;
         }
     }
 
@@ -108,7 +110,7 @@
         }
 
         @include sp {
-            width: 26.5px;
+            width: 32px;
             height: 26.5px;
         }
     }
@@ -166,6 +168,8 @@
 
         @include sp {
             letter-spacing: 2.25px;
+            margin-top: 14px;
+            margin-left: 2px;
 
             &::after {
                 width: 28.5px;

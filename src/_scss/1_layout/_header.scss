@@ -14,7 +14,7 @@
         }
 
         @include sp {
-            height: 442px;
+            height: 446px;
         }
     }
 
@@ -53,11 +53,12 @@
             width: 217px;
             height: 230.5px;
             padding-top: 57px;
+            transform: translate(-50%, -50%);
 
             p {
-                margin-top: 21.5px;
+                margin-top: 27.5px;
                 margin-bottom: 15.5px;
-                margin-left: -10px;
+                margin-left: -7px;
                 letter-spacing: -1px;
 
                 span {
@@ -93,6 +94,8 @@
             img {
                 width: 161px;
                 height: 28px;
+                margin-left: 17px;
+                margin-top: 2px;
             }
         }
     }
