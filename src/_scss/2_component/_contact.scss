@@ -1,6 +1,6 @@
 /* --------------------------------- CONTACT -------------------------------- */
 .p-contact {
-    padding-top: 90px;
+    padding-top: 94px;
 
     .l-container {
         max-width: 1200px;
@@ -24,7 +24,8 @@
         letter-spacing: 4.4px;
         height: 100%;
         @include mid(true);
-        margin-top: -2px;
+        margin-top: -1px;
+        margin-left: -6px;
     }
 
     @include mq(xl, max) {

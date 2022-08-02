@@ -7,8 +7,9 @@
         @include mq(xl, max) {
             max-width: 750px;
         }
-        @include mq(lg, max) {
-        }
+
+        @include mq(lg, max) {}
+
         @include sp {
             max-width: 375px;
         }
@@ -37,6 +38,7 @@
             padding-left: 0;
             margin-top: 0;
         }
+
         @include mq(lg, max) {
             font-size: 3rem;
         }
@@ -52,12 +54,14 @@
         @include mq(md-max, max) {
             gap: 10px;
         }
+
         @include mq(xl, max) {
             flex-wrap: wrap;
             gap: 70px;
         }
-        @include mq(lg, max) {
-        }
+
+        @include mq(lg, max) {}
+
         @include sp {
             gap: 35px;
         }
@@ -67,14 +71,16 @@
         width: 33.33%;
         padding-left: 50px;
 
-        @include mq(xl, max) {
+        @include mq(md-max, max) {
             width: 100%;
             padding-left: 0;
         }
-        @include mq(lg, max) {
-        }
-        @include sp {
-        }
+
+        @include mq(xl, max) {}
+
+        @include mq(lg, max) {}
+
+        @include sp {}
     }
 
     &__number {
@@ -104,9 +110,11 @@
         @include mq(md-max, max) {
             margin-left: 0;
         }
+
         @include mq(xl, max) {
             justify-content: flex-start;
         }
+
         @include mq(lg, max) {
             p {
                 margin-left: 55px;
@@ -122,6 +130,7 @@
                 justify-content: flex-end;
             }
         }
+
         @include sp {
             p {
                 margin-left: 15px;
@@ -146,9 +155,11 @@
         @include mq(md-max, max) {
             margin-left: 0;
         }
+
         @include mq(xl, max) {
             height: 212px;
         }
+
         @include mq(lg, max) {
             &--reverse {
                 background-image: url("../../assets/img/hero-bgTextMobile.png");
@@ -175,8 +186,9 @@
         @include mq(xl, max) {
             font-size: 3.3rem;
         }
-        @include mq(lg, max) {
-        }
+
+        @include mq(lg, max) {}
+
         @include sp {
             margin-top: 0;
             margin-left: 0;
@@ -204,10 +216,12 @@
         @include mq(md-max, max) {
             max-width: 65%;
         }
+
         @include mq(xl, max) {
             font-size: 2.5rem;
             width: 292px;
         }
+
         @include mq(lg, max) {
             height: 45px;
             line-height: 1.8;
