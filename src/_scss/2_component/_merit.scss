@@ -16,7 +16,7 @@
     }
 
     &__wrap {
-        padding-top: 122px;
+        padding-top: 111px;
         text-align: center;
 
         @include mq(md-max, max) {
@@ -76,8 +76,8 @@
         color: $black-cl;
         text-align: center;
         letter-spacing: 4.5px;
-        line-height: 2.2;
-        margin-bottom: 38px;
+        line-height: 1.6;
+        margin-bottom: 55px;
         margin-left: 38px;
         text-transform: uppercase;
 
@@ -166,7 +166,7 @@
             color: #231815;
             line-height: 1.6;
             margin-top: 11.5px;
-            margin-left: 11px;
+            margin-left: 10px;
             letter-spacing: 0.55px;
         }
 
