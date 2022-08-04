@@ -79,9 +79,9 @@
 
     @include sp {
       h2 {
-        margin-bottom: 15.5px;
+        margin-bottom: 16.5px;
         font-weight: 400;
-        margin-left: -21px;
+        margin-left: -19px;
       }
 
       h3 {
@@ -101,7 +101,7 @@
     margin-bottom: 119px;
 
     @include sp {
-      margin-top: 35.5px;
+      margin-top: 33.5px;
       margin-bottom: 68.5px;
     }
   }
@@ -273,7 +273,7 @@
       }
 
       h4 {
-        margin-top: 6px;
+        margin-top: 3px;
         font-weight: 400;
         position: relative;
         top: 9px;
@@ -321,7 +321,7 @@
     }
 
     @include sp {
-      padding: 20px 60px;
+      padding: 20px 55px;
       row-gap: 11px;
 
       h3 {
@@ -329,6 +329,7 @@
         margin-right: 21px;
         line-height: 1.5;
         padding-bottom: 16px;
+        margin-top: 2px;
       }
     }
   }

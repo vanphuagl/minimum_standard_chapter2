@@ -15,10 +15,11 @@ footer
     }
 
     @include sp {
-        padding: 33px 0;
+        padding: 34px 0;
 
         &__logo {
             margin-top: 0;
+            margin-left: 1px;
             display: inline-block;
 
             img {

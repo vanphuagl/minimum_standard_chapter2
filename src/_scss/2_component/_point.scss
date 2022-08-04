@@ -101,21 +101,22 @@
 
     @include sp {
       padding: 0 10px;
-      padding-bottom: 120px;
+      padding-bottom: 115px;
 
       h2 {
-        transform: translate(-14px, -18px);
+        transform: translate(-15px, -20px);
         letter-spacing: 3px;
       }
 
       h3 {
-        margin-right: -2px;
+        margin-right: 1px;
         height: 73.5px;
-        line-height: 4;
+        line-height: 3.5;
 
         span {
-          margin-left: -7px;
+          margin-left: -4px;
           font-size: 3.6rem;
+          margin-right: -4px;
         }
       }
     }
@@ -146,10 +147,10 @@
     }
 
     @include sp {
-      width: 213px;
+      width: 218px;
       height: 136px;
-      right: 18px;
-      bottom: -108px;
+      right: 16px;
+      bottom: -110px;
     }
   }
 
@@ -220,9 +221,9 @@
     @include sp {
       font-size: 2.2rem;
       letter-spacing: -0.2px;
-      margin-top: 12.5px;
+      margin-top: 13.5px;
       margin-bottom: 6px;
-      margin-left: 0;
+      margin-left: 1px;
     }
   }
 
