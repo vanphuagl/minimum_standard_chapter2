@@ -12,7 +12,7 @@
   }
 
   &__wrap {
-    padding-top: 60px;
+    padding-top: 57px;
     text-align: center;
 
     @include mq(xl, max) {
@@ -38,9 +38,9 @@
 
     h2 {
       font-size: 3.4rem;
-      margin-bottom: 15px;
+      margin-bottom: 13px;
       font-weight: 400;
-      margin-left: -2px;
+      margin-left: 8px;
 
       span {
         font-size: 4.6rem;
@@ -53,7 +53,7 @@
     h3 {
       font-size: 2.7rem;
       line-height: 1.4;
-      margin-left: 30px;
+      margin-left: 20px;
       font-weight: 400;
       font-family: "Yu Gothic";
 
@@ -114,7 +114,7 @@
 
     li {
       width: 20%;
-      padding: 30px;
+      padding: 31px;
       position: relative;
 
       a {
@@ -132,7 +132,7 @@
       position: absolute;
       right: 0;
       top: 50%;
-      transform: translate(90%, -30%);
+      transform: translate(77%, -35%);
     }
 
     li:first-child {
@@ -216,7 +216,7 @@
 
     h4 {
       font-size: 2.1rem;
-      line-height: 2.5;
+      line-height: 2;
       border-bottom: 1px solid #ccc;
       margin-top: 12px;
       font-weight: 400;

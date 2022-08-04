@@ -4,7 +4,7 @@
   margin: auto;
   background-color: $gray-cl;
   padding-top: 107px;
-  padding-bottom: 110px;
+  padding-bottom: 116px;
 
   .l-container {
     max-width: 1274px;
@@ -58,7 +58,7 @@
     line-height: 1;
     letter-spacing: 4.5px;
     position: relative;
-    margin-left: 30px;
+    margin-left: 27px;
 
     &::after {
       content: "";
@@ -88,13 +88,14 @@
     font-weight: bold;
     color: $white-cl;
     background-color: #231815;
-    padding: 0 58px;
-    margin-top: 98px;
+    padding: 0;
+    margin-top: 97px;
     margin-bottom: 46px;
     height: 64px;
     line-height: 2.2;
-    margin-left: 38px;
+    margin-left: 33px;
     width: 408px;
+    letter-spacing: 2px;
 
     @include sp {
       padding: 0 29px;
@@ -172,6 +173,13 @@
       letter-spacing: 0.5px;
     }
 
+    &.p-info1 {
+      p {
+        margin-top: 1px;
+        margin-left: -3px;
+      }
+    }
+
     @include mq(md-max, max) {
       padding: 80px;
     }
@@ -183,6 +191,8 @@
       &.p-info1 {
         p {
           font-size: 1.8rem;
+          margin-top: 0;
+          margin-left: 0;
         }
       }
     }
