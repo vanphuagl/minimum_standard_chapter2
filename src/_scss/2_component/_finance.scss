@@ -1,322 +1,386 @@
 /* --------------------------------- FINANCE -------------------------------- */
 .p-finance {
-    max-width: 1920px;
-    margin: auto;
-    background-color: $gray-cl;
-    padding-top: 107px;
-    padding-bottom: 110px;
+  max-width: 1920px;
+  margin: auto;
+  background-color: $gray-cl;
+  padding-top: 107px;
+  padding-bottom: 110px;
+
+  .l-container {
+    max-width: 1274px;
+  }
+
+  @include mq(md-max, max) {
+    .l-container {
+      max-width: 1200px;
+    }
+  }
+
+  @include mq(xl, max) {
+  }
+
+  @include mq(md, max) {
+    .l-container {
+      max-width: 750px;
+    }
+  }
+
+  @include sp {
+    padding-top: 41.5px;
+    padding-bottom: 62px;
 
     .l-container {
-        max-width: 1274px;
+      max-width: 375px;
     }
+  }
 
-    @include mq(md-max, max) {
-        .l-container {
-            max-width: 1200px;
-        }
-    }
+  &__wrap {
+    text-align: center;
 
     @include mq(xl, max) {
-        .l-container {
-            max-width: 750px;
-        }
+      padding: 0 80px;
+    }
+
+    @include mq(lg, max) {
     }
 
     @include sp {
-        padding-top: 41.5px;
-        padding-bottom: 62px;
+      padding: 0 40px;
+    }
+  }
 
-        .l-container {
-            max-width: 375px;
-        }
+  &__title {
+    text-transform: uppercase;
+    font-size: 4.8rem;
+    font-weight: 300;
+    font-family: "Oswald";
+    color: $black-cl;
+    line-height: 1;
+    letter-spacing: 4.5px;
+    position: relative;
+    margin-left: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 57px;
+      height: 1px;
+      background-color: #c7c7c7;
+      left: 50%;
+      bottom: -39px;
+      transform: translateX(-50%);
     }
 
-    &__wrap {
-        text-align: center;
+    @include sp {
+      letter-spacing: 2.25px;
+      margin-left: 0;
 
-        @include mq(xl, max) {
-            padding: 0 80px;
-        }
+      &::after {
+        width: 28.5px;
+        bottom: -20px;
+      }
+    }
+  }
 
-        @include mq(lg, max) {
-        }
+  &__subtitle {
+    display: inline-block;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: $white-cl;
+    background-color: #231815;
+    padding: 0 58px;
+    margin-top: 98px;
+    margin-bottom: 46px;
+    height: 64px;
+    line-height: 2.2;
+    margin-left: 38px;
+    width: 408px;
 
-        @include sp {
-            padding: 0 40px;
+    @include sp {
+      padding: 0 29px;
+      margin-top: 49px;
+      margin-bottom: 23px;
+      height: 32px;
+      width: auto;
+      margin-left: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin: -36px;
+
+    @include mq(md-max, max) {
+      justify-content: center;
+      margin: -20px;
+    }
+
+    @include mq(xl, max) {
+    }
+
+    @include mq(lg, max) {
+      flex-wrap: wrap;
+      margin: -30px;
+    }
+
+    @include sp {
+      margin: -17px;
+    }
+  }
+
+  &__item {
+    width: 50%;
+    padding: 34px;
+
+    @include mq(md-max, max) {
+      width: 50%;
+      padding: 20px;
+    }
+
+    @include mq(xl, max) {
+      width: 100%;
+      padding: 10px;
+    }
+
+    @include mq(lg, max) {
+      padding: 30px;
+    }
+
+    @include sp {
+      padding: 15px;
+    }
+  }
+
+  &__info {
+    background-color: $white-cl;
+    height: 432px;
+    padding: 90px;
+    position: relative;
+    color: #231815;
+    text-align: left;
+    font-size: 2.1rem;
+
+    h4 {
+      font-size: 2.6rem;
+      font-weight: bold;
+      margin: 10px 0 -10px 2px;
+    }
+
+    p {
+      font-weight: 400;
+      line-height: 6.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    @include mq(md-max, max) {
+      padding: 80px;
+    }
+
+    @include mq(xl, max) {
+      padding: 36px;
+      height: 325px;
+
+      &.p-info1 {
+        p {
+          font-size: 1.8rem;
         }
+      }
+    }
+
+    @include mq(lg, max) {
+      height: 432px;
+      padding: 80px;
+
+      &.p-info1 {
+        p {
+          font-size: 2.1rem;
+        }
+      }
+    }
+    @include sp {
+      padding: 47px 42px 30px;
+      height: 216px;
+      p {
+        letter-spacing: 0.25px;
+      }
+
+      h4 {
+        margin: 4px 0 15px 4px;
+        text-align: left;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      padding: 47px 34px 30px;
+    }
+  }
+
+  &__price {
+    font-size: 9rem;
+    font-weight: bold !important;
+    color: #7a89a8;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-left: -5px;
+    margin-bottom: 0;
+    letter-spacing: -0.2px;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 3.6rem;
+      margin-top: 46px;
+      margin-left: 6px;
+    }
+
+    @include mq(xl, max) {
+      font-size: 8rem;
+    }
+    @include mq(lg, max) {
+      font-size: 9rem;
+    }
+    @include sp {
+      margin-top: -6.5px;
+      margin-left: -1px;
+      margin-bottom: 4px;
+      letter-spacing: -0.1px;
+
+      span {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__desc {
+    margin-top: 5px;
+    margin-left: -5px;
+
+    @include mq(xl, max) {
+      font-size: 1.8rem;
+    }
+    @include mq(lg, max) {
+      font-size: 2.1rem;
+    }
+    @include sp {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
+  &__label {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #7a89a8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40px, -17px);
+    padding-top: 31px;
+    color: $white-cl;
+    font-weight: bold;
+    text-align: center;
+
+    p {
+      font-size: 3.2rem;
+      line-height: 1.2;
+      font-weight: bold;
+    }
+
+    h4 {
+      @include mid(true);
+      font-size: 9.6rem;
+      line-height: 1;
+      margin-top: -4px;
+
+      span {
+        font-size: 3.2rem;
+        margin-top: 25px;
+        margin-left: 10px;
+      }
+    }
+
+    img {
+      position: absolute;
+      left: -8px;
+      bottom: 20px;
+    }
+
+    @include mq(xl, max) {
+      width: 170px;
+      height: 170px;
+
+      p {
+        font-size: 2.5rem;
+      }
+
+      h4 {
+        font-size: 8.6rem;
+        margin-left: 23px;
+      }
+    }
+
+    @include mq(lg, max) {
+      width: 200px;
+      height: 200px;
+
+      p {
+        font-size: 3.2rem;
+      }
+
+      h4 {
+        font-size: 9.6rem;
+        margin-left: 23px;
+      }
+    }
+
+    @include sp {
+      width: 100px;
+      height: 100px;
+      transform: translate(22px, -9px);
+      text-align: center;
+      padding-top: 15.5px;
+
+      h4 {
+        margin-top: -2px;
+        margin-left: 0;
+
+        span {
+          margin-top: 12.5px;
+          margin-left: 5px;
+        }
+      }
+
+      img {
+        position: absolute;
+        left: -4px;
+        bottom: 10px;
+        z-index: -1;
+      }
+    }
+  }
+
+  /* ------------------------------- MEDIA QUERY ------------------------------ */
+  @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS */
+    &__label {
+      padding-top: 28px;
+
+      p {
+        line-height: 2.8;
+      }
+
+      h4 {
+        margin-top: -5px;
+
+        span {
+          margin-top: -5px;
+        }
+      }
     }
 
     &__title {
-        text-transform: uppercase;
-        font-size: 4.8rem;
-        font-weight: 300;
-        font-family: "Oswald";
-        color: $black-cl;
-        line-height: 1;
-        letter-spacing: 4.5px;
-        position: relative;
-        margin-left: 30px;
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 57px;
-            height: 1px;
-            background-color: #c7c7c7;
-            left: 50%;
-            bottom: -39px;
-            transform: translateX(-50%);
-        }
-
-        @include sp {
-            letter-spacing: 2.25px;
-            margin-left: 0;
-
-            &::after {
-                width: 28.5px;
-                bottom: -20px;
-            }
-        }
+      padding-top: 18px;
     }
-
-    &__subtitle {
-        display: inline-block;
-        font-size: 2.8rem;
-        font-weight: bold;
-        color: $white-cl;
-        background-color: #231815;
-        padding: 0 58px;
-        margin-top: 98px;
-        margin-bottom: 46px;
-        height: 64px;
-        line-height: 2.2;
-        margin-left: 38px;
-        width: 408px;
-
-        @include sp {
-            padding: 0 29px;
-            margin-top: 49px;
-            margin-bottom: 23px;
-            height: 32px;
-            width: auto;
-            margin-left: 0;
-        }
-    }
-
-    &__list {
-        display: flex;
-        margin: -36px;
-
-        @include mq(md-max, max) {
-            justify-content: center;
-            margin: -20px;
-        }
-
-        @include mq(xl, max) {
-            flex-wrap: wrap;
-            margin: -30px;
-        }
-
-        @include mq(lg, max) {
-        }
-
-        @include sp {
-            margin: -17px;
-        }
-    }
-
-    &__item {
-        width: 50%;
-        padding: 34px;
-
-        @include mq(md-max, max) {
-            width: 50%;
-            padding: 20px;
-        }
-
-        @include mq(xl, max) {
-            width: 100%;
-            padding: 30px;
-        }
-
-        @include mq(lg, max) {
-        }
-
-        @include sp {
-            padding: 15px;
-        }
-    }
-
-    &__info {
-        background-color: $white-cl;
-        height: 432px;
-        padding: 90px;
-        position: relative;
-        color: #231815;
-        text-align: left;
-        font-size: 2.1rem;
-
-        h4 {
-            font-size: 2.6rem;
-            font-weight: bold;
-            margin: 10px 0 -10px 2px;
-        }
-
-        p {
-            font-weight: 400;
-            line-height: 6.9rem;
-            letter-spacing: 0.5px;
-        }
-
-        @include mq(md-max, max) {
-            padding: 80px;
-        }
-        @include mq(lg, max) {
-        }
-        @include sp {
-            padding: 47px 42px 30px;
-            height: 216px;
-
-            p {
-                letter-spacing: 0.25px;
-            }
-
-            h4 {
-                margin: 4px 0 15px 4px;
-                text-align: left;
-            }
-        }
-
-        @media screen and (max-width: 375px) {
-            padding: 47px 34px 30px;
-        }
-    }
-
-    &__price {
-        font-size: 9rem;
-        font-weight: bold !important;
-        color: #7a89a8;
-        line-height: 1.5;
-        margin-top: 15px;
-        margin-left: -5px;
-        margin-bottom: 0;
-        letter-spacing: -0.2px;
-        display: flex;
-        align-items: center;
-
-        span {
-            font-size: 3.6rem;
-            margin-top: 46px;
-            margin-left: 6px;
-        }
-
-        @include sp {
-            margin-top: -6.5px;
-            margin-left: -1px;
-            margin-bottom: 4px;
-            letter-spacing: -0.1px;
-
-            span {
-                margin-top: 20px;
-            }
-        }
-    }
-
-    &__desc {
-        margin-top: 5px;
-        margin-left: -5px;
-
-        @include sp {
-            margin-top: 0;
-            margin-left: 0;
-        }
-    }
-
-    &__label {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-color: #7a89a8;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(40px, -17px);
-        padding-top: 31px;
-        color: $white-cl;
-        font-weight: bold;
-        text-align: center;
-
-        p {
-            font-size: 3.2rem;
-            line-height: 1.2;
-            font-weight: bold;
-        }
-
-        h4 {
-            @include mid(true);
-            font-size: 9.6rem;
-            line-height: 1;
-            margin-top: -4px;
-
-            span {
-                font-size: 3.2rem;
-                margin-top: 25px;
-                margin-left: 10px;
-            }
-        }
-
-        img {
-            position: absolute;
-            left: -8px;
-            bottom: 20px;
-        }
-
-        @include sp {
-            width: 100px;
-            height: 100px;
-            transform: translate(22px, -9px);
-            text-align: center;
-            padding-top: 15.5px;
-
-            h4 {
-                margin-top: -2px;
-
-                span {
-                    margin-top: 12.5px;
-                    margin-left: 5px;
-                }
-            }
-
-            img {
-                position: absolute;
-                left: -4px;
-                bottom: 10px;
-                z-index: -1;
-            }
-        }
-    }
-
-    /* ------------------------------- MEDIA QUERY ------------------------------ */
-    @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        /* IE10+ CSS */
-        &__label {
-            padding-top: 28px;
-
-            p {
-                line-height: 2.8;
-            }
-
-            h4 {
-                margin-top: -5px;
-
-                span {
-                    margin-top: -5px;
-                }
-            }
-        }
-
-        &__title {
-            padding-top: 18px;
-        }
-    }
+  }
 }

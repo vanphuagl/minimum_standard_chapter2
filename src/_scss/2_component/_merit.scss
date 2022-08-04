@@ -4,10 +4,12 @@
         max-width: 1200px;
 
         @include mq(xl, max) {
-            padding: 0 60px;
-            max-width: 750px;
+            max-width: 1200px;
+            padding: 0 20px;
         }
         @include mq(lg, max) {
+            padding: 0 60px;
+            max-width: 750px;
         }
         @include sp {
             padding: 0 30px;
@@ -107,9 +109,9 @@
         }
 
         @include mq(xl, max) {
-            flex-wrap: wrap;
         }
         @include mq(lg, max) {
+            flex-wrap: wrap;
         }
         @include sp {
             margin: 0 -40px 16px;
@@ -120,9 +122,9 @@
         padding: 0 40px;
 
         @include mq(xl, max) {
-            width: 100%;
         }
         @include mq(lg, max) {
+            width: 100%;
         }
         @include sp {
             padding: 0 34px;
@@ -178,6 +180,24 @@
         @include mq(xl, max) {
             margin-left: 0;
             margin-right: 0;
+            padding-left: 25px;
+
+            h4 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.8rem;
+            }
+        }
+
+        @include mq(lg, max) {
+            padding-left: 80px;
+            h4 {
+                font-size: 2.8rem;
+            }
+            p {
+                font-size: 2.1rem;
+            }
         }
 
         @include sp {
@@ -231,6 +251,7 @@
 
         @include mq(xl, max) {
             width: 100%;
+            padding: 0;
 
             img {
                 margin: auto;
@@ -238,6 +259,7 @@
             }
         }
         @include mq(lg, max) {
+            padding: 19px 29px;
         }
 
         @include sp {

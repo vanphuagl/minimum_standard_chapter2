@@ -81,20 +81,21 @@
             }
         }
         @include mq(xl, max) {
-            padding: 0 20px;
+            max-width: 1200px;
             padding-bottom: 300px;
-            max-width: 750px;
             margin: auto;
-
+            
             h2 {
                 font-size: 6.1rem;
             }
-
+            
             h3 {
                 font-size: 2.5rem;
             }
         }
         @include mq(lg, max) {
+            // padding: 0 20px;
+            max-width: 750px;
         }
 
         @include sp {
@@ -153,10 +154,11 @@
         display: flex;
 
         @include mq(xl, max) {
-            flex-wrap: wrap;
-            margin: -10px;
+            margin: -30px;
         }
         @include mq(lg, max) {
+            flex-wrap: wrap;
+            margin: -10px;
         }
         @include sp {
             margin: -5px;
