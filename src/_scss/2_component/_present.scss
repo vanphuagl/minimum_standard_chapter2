@@ -33,7 +33,7 @@
             padding-top: 60px;
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
         }
 
         @include sp {
@@ -46,7 +46,7 @@
             display: block;
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             display: none;
         }
 
@@ -65,7 +65,7 @@
             }
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             display: block;
         }
 

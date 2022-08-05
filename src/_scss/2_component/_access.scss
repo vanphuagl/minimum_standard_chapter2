@@ -34,7 +34,7 @@
             }
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             width: 100%;
         }
 
@@ -84,9 +84,13 @@
             }
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             width: 100%;
             padding: 80px 100px;
+
+            p {
+                text-align: center;
+            }
         }
 
         @include sp {
@@ -120,6 +124,9 @@
             transform: translateX(-50%);
         }
 
+        @include mq(lg-max, max) {
+            margin-left: 0;
+        }
         @include sp {
             letter-spacing: 2.25px;
             margin-left: 18px;
@@ -139,7 +146,11 @@
         margin-top: 55px;
         margin-left: -58px;
         font-family: "Yu Gothic", sans-serif;
-
+        
+        @include mq(lg-max, max) {
+            margin-left: 0;
+        }
+        
         @include sp {
             margin-top: 29.5px;
             margin-left: 18px;
@@ -198,9 +209,16 @@
             }
         }
 
+        @include mq(lg-max, max) {
+            position: relative;
+            top: 0;
+            left: 15%;
+        }
+
         @include sp {
             margin-top: 44px;
             margin-left: 12px;
+            position: unset;
 
             li {
                 margin-bottom: 6px;

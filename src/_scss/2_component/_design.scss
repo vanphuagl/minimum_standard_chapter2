@@ -31,7 +31,7 @@
                 max-width: 75%;
             }
         }
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
         }
 
         @include sp {
@@ -70,10 +70,10 @@
             max-width: 96%;
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             // max-height: 486px;
             > img {
-                height: 520px;
+                height: 470px;
             }
         }
 
@@ -140,7 +140,7 @@
         @include mq(xl, max) {
             padding-left: 60px;
         }
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
         }
 
         @include sp {
@@ -226,7 +226,7 @@
             width: 55%;
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             width: 100%;
         }
 
@@ -264,7 +264,7 @@
                 height: 250px;
             }
         }
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             display: block;
             position: relative;
             right: auto;

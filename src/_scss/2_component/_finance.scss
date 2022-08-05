@@ -41,7 +41,7 @@
             padding: 0 20px;
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             padding: 0 80px;
         }
 
@@ -121,7 +121,7 @@
         @include mq(xl, max) {
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             flex-wrap: wrap;
             margin: -30px;
         }
@@ -145,7 +145,7 @@
             padding: 10px;
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             padding: 30px;
         }
 
@@ -200,9 +200,11 @@
             }
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             height: 432px;
             padding: 80px;
+            @include mid(true);
+            flex-direction: column;
 
             &.p-info1 {
                 p {
@@ -212,6 +214,7 @@
             }
         }
         @include sp {
+            display: unset;
             padding: 47px 42px 30px;
             height: 216px;
 
@@ -251,7 +254,7 @@
         @include mq(xl, max) {
             // font-size: 8rem;
         }
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             font-size: 9rem;
         }
         @include sp {
@@ -274,7 +277,7 @@
         @include mq(xl, max) {
             // font-size: 1.8rem;
         }
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             font-size: 2.1rem;
         }
         @include sp {
@@ -337,7 +340,7 @@
             // }
         }
 
-        @include mq(lg, max) {
+        @include mq(lg-max, max) {
             width: 200px;
             height: 200px;
 

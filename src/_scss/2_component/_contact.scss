@@ -36,7 +36,7 @@
         }
     }
 
-    @include mq(lg, max) {
+    @include mq(lg-max, max) {
         .l-container {
             padding: 0 56px;
         }
