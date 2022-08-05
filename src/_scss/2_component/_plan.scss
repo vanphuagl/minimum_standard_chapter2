@@ -1,370 +1,456 @@
 /* ---------------------------------- PLAN ---------------------------------- */
 .p-plan {
-  .l-container {
-    max-width: 1264px;
-    margin: auto;
-    position: relative;
-  }
-
-  @include sp {
     .l-container {
-      max-width: 375px;
-    }
-  }
-
-  &__wrap {
-    padding-top: 130px;
-    padding-bottom: 92px;
-
-    @include sp {
-      padding-top: 47px;
-      padding-bottom: 68px;
-    }
-  }
-
-  &__title {
-    text-align: center;
-    font-size: 4.8rem;
-    font-weight: 300;
-    font-family: "Oswald";
-    color: $black-cl;
-    text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: 4.5px;
-    position: relative;
-    margin-left: 10px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 57px;
-      height: 1px;
-      background: #c7c7c7;
-      left: 50%;
-      bottom: -36px;
-      transform: translateX(-50%);
-    }
-
-    @include sp {
-      letter-spacing: 2.25px;
-      margin-left: 0;
-
-      &::after {
-        width: 28.5px;
-        bottom: -18px;
-      }
-    }
-  }
-
-  &__img {
-    display: flex;
-    // flex-direction: space-between;
-    padding-top: 115px;
-
-    img {
-      margin: auto;
-    }
-
-    @include sp {
-      margin-top: 41px;
-      padding: 0 10px;
-    }
-  }
-
-  &__1f {
-    img {
-      margin-left: 38px;
-      margin-top: -4px;
-
-      &:last-child {
+        max-width: 1264px;
+        margin: auto;
         position: relative;
-        top: -12px;
-        left: 34px;
-      }
-    }
-
-    @include mq(xl, max) {
-      img {
-        margin-left: 5px;
-        margin-top: 5px;
-
-        &:last-child {
-          position: unset;
-        }
-      }
     }
 
     @include sp {
-      > img:last-child {
-        width: 26px;
-        height: 26px;
-        margin-right: 0;
-        margin-left: 12px;
-        margin-top: 3px;
-      }
+        .l-container {
+            max-width: 375px;
+        }
     }
-  }
 
-  &__2f {
-    img {
-      margin-left: 26px;
-      margin-top: 11px;
-      margin-right: 7px;
+    &__wrap {
+        padding-top: 130px;
+        padding-bottom: 92px;
 
-      &:last-child {
+        @include sp {
+            padding-top: 47px;
+            padding-bottom: 68px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 4.8rem;
+        font-weight: 300;
+        font-family: "Oswald", sans-serif;
+        color: $black-cl;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 4.5px;
         position: relative;
-        top: -38px;
-        left: 101px;
-      }
-    }
+        margin-left: 10px;
 
-    @include mq(xl, max) {
-      img {
-        margin-left: 8px;
-        margin-top: 1px;
-        margin-right: 0;
-
-        &:last-child {
-          position: unset;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 57px;
+            height: 1px;
+            background: #c7c7c7;
+            left: 50%;
+            bottom: -36px;
+            transform: translateX(-50%);
         }
-      }
-    }
 
-    @include sp {
-      > img:last-child {
-        width: 26px;
-        height: 26px;
-        margin-right: 0;
-        margin-left: 36px;
-        margin-top: 4px;
-      }
-    }
-  }
+        @include sp {
+            letter-spacing: 2.25px;
+            margin-left: 0;
 
-  /* ---------------------------------- INFO ---------------------------------- */
-  &__info {
-    display: flex;
-    justify-content: center;
-    margin-top: 14px;
-    margin-bottom: 90px;
-
-    @include mq(xl, max) {
-    }
-
-    @include mq(lg, max) {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    @include sp {
-      gap: 5px;
-      margin-top: 19px;
-      margin-bottom: 19px;
-    }
-  }
-
-  &__item {
-    display: flex;
-    padding: 0 15px;
-    position: relative;
-    font-family: "Yu Gothic";
-
-    h3,
-    p {
-      font-size: 2.2rem;
-      font-weight: 400;
-      color: #231815;
-    }
-
-    h3 {
-      margin-right: 15px;
-    }
-
-    &.p-item2 {
-      left: 18px;
-    }
-
-    &.p-item3 {
-      left: 30px;
-    }
-
-    @include mq(xl, max) {
-      width: 100%;
-      justify-content: center;
-
-      &.p-item2 {
-        left: 0;
-      }
-
-      &.p-item3 {
-        left: 0;
-      }
-    }
-
-    @include mq(lg, max) {
-      h3 {
-        margin-top: 4px;
-      }
-    }
-
-    @include sp {
-      h3,
-      p {
-        font-size: 2.3rem;
-      }
-
-      h3 {
-        margin-top: 3px;
-        margin-left: -3px;
-      }
-
-      p {
-        margin-left: -3px;
-      }
-    }
-  }
-
-  /* --------------------------------- CONTENT -------------------------------- */
-  &__content {
-    padding: 0 34px;
-
-    @include sp {
-      padding: 0 17px;
-    }
-  }
-
-  &__detail {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    height: 80px;
-    font-family: "Yu Gothic";
-
-    h3,
-    p {
-      font-size: 2.5rem;
-      font-weight: 400;
-      color: #231815;
-      text-align: left;
-    }
-
-    h3 {
-      width: 23%;
-      margin-left: 13px;
-      margin-top: 24px;
-    }
-
-    p {
-      padding: 0 10px;
-      margin-top: 23px;
-      margin-left: -8px;
-    }
-
-    @include mq(md-max, max) {
-      h3 {
-        min-width: 33%;
-        margin-left: 0;
-        margin-top: 0;
-      }
-
-      p {
-        margin-left: 0;
-        margin-top: 0;
-      }
-    }
-
-    @include sp {
-      height: 36.5px;
-
-      &.p-detail1 {
-        h3 {
-          margin-left: 4px;
-          margin-top: 4px;
+            &::after {
+                width: 28.5px;
+                bottom: -18px;
+            }
         }
-      }
+    }
 
-      &.p-detail2 {
+    &__img {
+        display: flex;
+        // flex-direction: space-between;
+        padding-top: 115px;
+
+        img {
+            margin: auto;
+        }
+
+        @include sp {
+            margin-top: 41px;
+            padding: 0 10px;
+        }
+    }
+
+    &__1f {
+        img {
+            margin-left: 36px;
+            margin-top: -3px;
+
+            &:last-child {
+                position: relative;
+                top: -12px;
+                left: 34px;
+            }
+        }
+
+        @include mq(xl, max) {
+            img {
+                margin-left: 5px;
+                margin-top: 2px;
+
+                &:last-child {
+                    position: unset;
+                }
+            }
+        }
+
+        @include mq(lg, max) {
+            img {
+                margin-top: 5px;
+            }
+        }
+
+        @include sp {
+            > img:last-child {
+                width: 26px;
+                height: 26px;
+                margin-right: 0;
+                margin-left: 12px;
+                margin-top: 3px;
+            }
+        }
+    }
+
+    &__2f {
+        img {
+            margin-left: 27px;
+            margin-top: 11px;
+            margin-right: 9px;
+
+            &:last-child {
+                position: relative;
+                top: -41px;
+                left: 102px;
+            }
+        }
+
+        @include mq(xl, max) {
+            img {
+                margin-left: 8px;
+                margin-top: 1px;
+                margin-right: 0;
+
+                &:last-child {
+                    position: unset;
+                }
+            }
+        }
+
+        @include sp {
+            > img:last-child {
+                width: 26px;
+                height: 26px;
+                margin-right: 0;
+                margin-left: 36px;
+                margin-top: 4px;
+            }
+        }
+    }
+
+    /* ---------------------------------- INFO ---------------------------------- */
+    &__info {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+        margin-bottom: 90px;
+
+        @include mq(xl, max) {
+            padding-right: 10px;
+        }
+
+        @include mq(lg, max) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 0;
+        }
+
+        @include sp {
+            gap: 5px;
+            margin-top: 19px;
+            margin-bottom: 19px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        padding: 0 15px;
+        position: relative;
+        font-family: "Yu Gothic", sans-serif;
+
+        h3,
+        p {
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: #231815;
+        }
+
         h3 {
-          margin-top: 12px;
-          margin-left: 2px;
+            margin-right: 17px;
+            position: relative;
+        }
+
+        &.p-item1 {
+            > h3 {
+                left: -8px;
+            }
+        }
+
+        &.p-item2 {
+            > h3 {
+                left: 13px;
+            }
+
+            > p {
+                position: relative;
+                left: 15px;
+            }
+        }
+
+        &.p-item3 {
+            > h3 {
+                left: 28px;
+            }
+
+            > p {
+                position: relative;
+                left: 30px;
+            }
+        }
+
+        @include mq(xl, max) {
+            width: 100%;
+            justify-content: center;
+
+            &.p-item2 {
+                left: 0;
+            }
+
+            &.p-item3 {
+                left: 0;
+            }
+        }
+
+        @include mq(lg, max) {
+            h3 {
+                margin-top: 4px;
+            }
+        }
+
+        @include sp {
+            h3,
+            p {
+                font-size: 2.3rem;
+            }
+
+            h3 {
+                margin-top: 3px;
+                margin-left: -3px;
+            }
+
+            p {
+                margin-left: -3px;
+            }
+        }
+    }
+
+    /* --------------------------------- CONTENT -------------------------------- */
+    &__content {
+        padding: 0 34px;
+
+        @include sp {
+            padding: 0 17px;
+        }
+    }
+
+    &__detail {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        height: 80px;
+        font-family: "Yu Gothic", sans-serif;
+
+        h3,
+        p {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #231815;
+            text-align: left;
+        }
+
+        h3 {
+            width: 23%;
+            margin-left: 13px;
+            margin-top: 26px;
+            letter-spacing: -1px;
         }
 
         p {
-          margin-top: 10px;
-          margin-left: 4px;
+            padding: 0 10px;
+            margin-top: 23px;
+            margin-left: -8px;
         }
-      }
 
-      &.p-detail3 {
-        height: 66px;
-
-        h3 {
-          margin-left: 3px;
-          margin-right: 7px;
+        &.p-detail3 {
+            h3 {
+                letter-spacing: -3px;
+            }
         }
-      }
 
-      &.p-detail4 {
-        height: 44px;
+        @include mq(md-max, max) {
+            h3 {
+                min-width: 33%;
+                margin-left: 0;
+                margin-top: 0;
+            }
 
-        h3 {
-          margin-left: 3px;
-          margin-right: 7px;
+            p {
+                margin-left: 0;
+                margin-top: 0;
+            }
+            height: 100px;
         }
-      }
 
-      h3 {
-        align-self: center;
-      }
+        @include mq(xl, max) {
+        }
+
+        @include sp {
+            height: 36.5px;
+
+            &.p-detail1 {
+                h3 {
+                    margin-left: 4px;
+                    margin-top: 4px;
+                }
+            }
+
+            &.p-detail2 {
+                h3 {
+                    margin-top: 12px;
+                    margin-left: 2px;
+                }
+
+                p {
+                    margin-top: 10px;
+                    margin-left: 4px;
+                }
+            }
+
+            &.p-detail3 {
+                height: 66px;
+
+                h3 {
+                    margin-left: 3px;
+                    margin-right: 7px;
+                }
+            }
+
+            &.p-detail4 {
+                height: 44px;
+
+                h3 {
+                    margin-left: 3px;
+                    margin-right: 7px;
+                }
+            }
+
+            h3 {
+                align-self: center;
+            }
+        }
     }
-  }
 
-  &__group {
-    display: flex;
-    align-items: center;
-    margin: 0 -20px;
-    padding-top: 20px;
+    &__group {
+        display: flex;
+        align-items: center;
+        margin: 0 -20px;
+        padding-top: 21px;
 
-    p {
-      font-size: 2rem;
-      font-weight: 400;
-      color: #231815;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 0 15px;
-      margin: 0 9px;
-      height: 38px;
+        a {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #231815;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0 13px;
+            margin: 0 10px;
+            height: 38px;
+            line-height: 1.8;
+        }
+
+        > .p-groupitem1 {
+            letter-spacing: 0.5px;
+            padding-right: 8px;
+        }
+
+        > .p-groupitem2 {
+            letter-spacing: -1px;
+            padding-right: 19px;
+        }
+
+        > .p-groupitem3 {
+            letter-spacing: 1.5px;
+        }
+
+        > .p-groupitem4 {
+            letter-spacing: -0.5px;
+            padding-right: 15px;
+        }
+
+        > .p-groupitem5 {
+            padding-right: 17px;
+        }
+
+        > .p-groupitem6 {
+            letter-spacing: -0.8px;
+            padding-right: 18px;
+        }
+
+        > .p-groupitem7 {
+            letter-spacing: -2px;
+            padding-right: 15px;
+        }
+
+        > .p-groupitem8 {
+            letter-spacing: 2.7px;
+            padding-right: 14px;
+        }
+
+        @include mq(md-max, max) {
+            p {
+                padding: 0 5px;
+            }
+
+            flex-wrap: wrap;
+            margin: 0 -10px;
+            padding-top: 0;
+
+            a {
+                margin: 3px 10px;
+            }
+        }
+        @include mq(xl, max) {
+            p {
+                padding: 0 10px;
+                margin: 0 10px;
+            }
+        }
+
+        @include mq(lg, max) {
+            a {
+                margin: 0 10px;
+            }
+        }
+
+        @include sp {
+            margin: 10px -5px;
+
+            p {
+                padding: 0 5px;
+                border-radius: 2.5px;
+                margin: 3px;
+                height: auto;
+            }
+        }
     }
-
-    @include mq(md-max, max) {
-      p {
-        padding: 0 5px;
-      }
-    }
-    @include mq(xl, max) {
-      flex-wrap: wrap;
-      margin: 0 -10px;
-      padding-top: 0;
-
-      p {
-        padding: 0 10px;
-        margin: 0 10px;
-      }
-    }
-
-    @include mq(lg, max) {
-    }
-
-    @include sp {
-      margin: 10px -5px;
-
-      p {
-        padding: 0 5px;
-        border-radius: 2.5px;
-        margin: 3px;
-        height: auto;
-      }
-    }
-  }
 }

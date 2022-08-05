@@ -4,11 +4,13 @@
         max-width: 1594px;
         margin: auto;
 
-        @include mq(xl, max) {
-            max-width: 1200px;
+        @include mq(md-max, max) {
             padding: 0 10px;
         }
-        
+        @include mq(xl, max) {
+            max-width: 1200px;
+        }
+
         @include mq(lg, max) {
             max-width: 750px;
             padding: 0;
@@ -34,11 +36,12 @@
         text-align: center;
         color: $black-cl;
         margin-bottom: 60px;
-        padding-left: 35px;
-        margin-top: -1px;
+        padding-left: 32px;
+        letter-spacing: -0.2px;
+        margin-top: 0;
 
         @include mq(xl, max) {
-            font-size: 3.3rem;
+            // font-size: 3.3rem;
         }
 
         @include mq(lg, max) {
@@ -60,7 +63,6 @@
         }
 
         @include mq(xl, max) {
-
         }
 
         @include mq(lg, max) {
@@ -94,7 +96,7 @@
     }
 
     &__number {
-        font-family: "Roboto";
+        font-family: "Roboto", sans-serif;
         display: flex;
         text-align: center;
 
@@ -125,7 +127,7 @@
 
         @include mq(xl, max) {
         }
-        
+
         @include mq(lg, max) {
             justify-content: flex-start;
             margin-bottom: -2px;
@@ -160,7 +162,7 @@
     &__content {
         background-image: url("../../assets/img/hero-bgText.png");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: initial;
         background-position: center;
         width: 100%;
         height: 155px;
@@ -173,7 +175,7 @@
 
         @include mq(xl, max) {
         }
-        
+
         @include mq(lg, max) {
             height: 212px;
 
@@ -200,14 +202,30 @@
         width: 100%;
         margin-top: 14px;
         margin-left: -3px;
-        font-family: "Yu Gothic";
+        font-family: "Yu Gothic", sans-serif;
+
+        &.p-caseinfo1 {
+            margin-left: -2px;
+            letter-spacing: -1.1px;
+        }
+
+        &.p-caseinfo2 {
+            margin-left: -2px;
+        }
+
+        &.p-caseinfo3 {
+            margin-left: -8px;
+            letter-spacing: -2.2px;
+        }
 
         @include mq(xl, max) {
-            font-size: 1.8rem;
+            // font-size: 1.8rem;
+            padding: 0 16px;
         }
-        
+
         @include mq(lg, max) {
             font-size: 3.3rem;
+            padding: 0;
         }
 
         @include sp {
@@ -233,6 +251,7 @@
         position: absolute;
         top: 16px;
         right: 0;
+        letter-spacing: -1.5px;
 
         @include mq(md-max, max) {
             max-width: 65%;
@@ -240,9 +259,9 @@
 
         @include mq(xl, max) {
             width: 292px;
-            top: 25px;
+            top: 10px;
         }
-        
+
         @include mq(lg, max) {
             font-size: 2.5rem;
             height: 45px;
@@ -251,7 +270,7 @@
             right: 10px;
             top: 10px;
             letter-spacing: -1px;
-            
+
             &--reverse {
                 left: 11px;
                 top: 10px;

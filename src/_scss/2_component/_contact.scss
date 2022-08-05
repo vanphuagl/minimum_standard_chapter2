@@ -16,16 +16,16 @@
     &__title {
         font-size: 4.8rem;
         font-weight: 300;
-        font-family: "Oswald";
+        font-family: "Oswald", sans-serif;
         color: $black-cl;
         text-align: center;
         text-transform: uppercase;
         position: relative;
-        letter-spacing: 4.4px;
+        letter-spacing: 4.3px;
         height: 100%;
         @include mid(true);
         margin-top: -1px;
-        margin-left: -6px;
+        margin-left: -9px;
     }
 
     @include mq(xl, max) {

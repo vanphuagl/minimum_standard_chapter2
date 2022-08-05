@@ -16,15 +16,18 @@
     }
 
     &__wrap {
-        padding-top: 120px;
+        padding-top: 117px;
+        margin-left: 4px;
 
         @include sp {
             padding-top: 61px;
+            margin-left: 0;
         }
     }
 
     &__wrap2 {
         padding-top: 88px;
+        margin-left: 4px;
 
         @include mq(xl, max) {
             padding-top: 60px;

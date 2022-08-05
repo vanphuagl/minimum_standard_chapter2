@@ -48,8 +48,9 @@ $mq-breakpoints: (
     "xxl": 1240px,
     "xs-max": 599px,
     "sm-max": 959px,
+    "lg-max": 1024px,
     "md-max": 1600px,
-    "lg-max": 1919px,
+    "xl-max": 1920px,
 );
 
 @mixin mq($breakpoint: md, $rule: min, $subtraction: true) {
