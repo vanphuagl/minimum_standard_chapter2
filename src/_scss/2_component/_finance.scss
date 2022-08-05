@@ -214,9 +214,10 @@
             }
         }
         @include sp {
-            display: unset;
-            padding: 47px 42px 30px;
+            padding: 30px 30px 30px;
+            min-height: 216px;
             height: 216px;
+            align-items: flex-start;
 
             p {
                 letter-spacing: 0.25px;
@@ -226,10 +227,6 @@
                 margin: 2px 0 10px 11px;
                 text-align: left;
             }
-        }
-
-        @media screen and (max-width: 375px) {
-            padding: 47px 34px 30px;
         }
     }
 

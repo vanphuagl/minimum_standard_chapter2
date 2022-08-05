@@ -118,7 +118,7 @@
             padding-bottom: 115px;
 
             h2 {
-                transform: translate(-15px, -20px);
+                transform: translate(75px, -20px);
                 letter-spacing: 3px;
             }
 
@@ -218,9 +218,10 @@
         }
 
         @include sp {
-            height: 239px;
+            height: 250px;
             max-height: 100%;
             padding: 10px;
+            min-height: 250px;
         }
     }
 
