@@ -213,10 +213,11 @@
 
             h4 {
                 margin-left: 0;
-                margin-top: 2px;
+                margin-top: 9px;
 
                 img {
                     width: 21px;
+                    transform: translate(60%, -90%);
                 }
             }
 
@@ -225,9 +226,10 @@
             }
 
             p {
-                margin-left: 0;
-                margin-top: 4px;
-                letter-spacing: 0.8px;
+                margin-left: -1px;
+                margin-top: 10px;
+                padding-right: 8px;
+                // letter-spacing: 0.8px;
             }
 
             &.p-content3 {
@@ -251,6 +253,15 @@
 
             &--3 {
                 transform: translate(20%, -95%) !important;
+            }
+        }
+        @include sp {
+            &--reverse {
+                transform: translate(127%, -88%) !important;
+            }
+
+            &--3 {
+                transform: translate(93%, -95%) !important;
             }
         }
     }

@@ -105,11 +105,11 @@
         @include sp {
             padding: 0 20px;
             margin-top: 47px;
-            margin-bottom: 23px;
+            margin-bottom: 25px;
             height: 33px;
             width: 205px;
-            margin-left: 0;
-            letter-spacing: 1px;
+            margin-left: -1px;
+            letter-spacing: 0;
         }
     }
 
@@ -218,7 +218,8 @@
             }
         }
         @include sp {
-            padding: 30px;
+            padding: 34px;
+            padding-top: 46px;
             min-height: 216px;
             height: 216px;
             align-items: flex-start;
@@ -228,7 +229,7 @@
             }
 
             h4 {
-                margin: 2px 0 10px 11px;
+                margin: -9px 0 10px 11px;
                 text-align: left;
             }
         }

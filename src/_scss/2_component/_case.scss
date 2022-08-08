@@ -184,7 +184,7 @@
         @include mq(lg-max, max) {
             height: 212px;
             background-size: contain;
-      
+
             &--reverse {
                 background-image: url("../../assets/img/hero-bgTextMobile.png");
                 justify-content: flex-end;
@@ -208,7 +208,7 @@
         width: 100%;
         margin-top: 14px;
         margin-left: -3px;
-        font-family: "Yu Gothic", sans-serif;
+        font-family: Yu Gothic, sans-serif;
 
         &.p-caseinfo1 {
             margin-left: -2px;
@@ -239,6 +239,21 @@
             margin-left: 0;
             transform: translate(-50%, calc(-50% + 7px));
             letter-spacing: -0.7px;
+
+            &.p-caseinfo1 {
+                margin-left: -1px;
+                letter-spacing: -0.6px;
+            }
+
+            &.p-caseinfo2 {
+                margin-left: -1px;
+                letter-spacing: -1px;
+            }
+
+            &.p-caseinfo3 {
+                margin-left: -5px;
+                letter-spacing: -1.3px;
+            }
         }
     }
 
@@ -259,8 +274,8 @@
         right: 0;
         letter-spacing: -1.5px;
 
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
-            line-height: 2.8;   
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            line-height: 2.8;
         }
 
         @include mq(md-max, max) {
