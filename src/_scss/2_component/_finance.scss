@@ -98,6 +98,10 @@
         width: 408px;
         letter-spacing: 0.6px;
 
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+            line-height: 3;   
+        }
+
         @include sp {
             padding: 0 20px;
             margin-top: 47px;
@@ -214,7 +218,7 @@
             }
         }
         @include sp {
-            padding: 30px 30px 30px;
+            padding: 30px;
             min-height: 216px;
             height: 216px;
             align-items: flex-start;

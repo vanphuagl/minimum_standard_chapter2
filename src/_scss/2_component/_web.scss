@@ -367,7 +367,7 @@
     &__tabletitle {
         display: flex;
         align-items: center;
-        column-gap: 50px;
+        // column-gap: 50px;
         margin-top: 20px;
 
         a {
@@ -388,6 +388,7 @@
             position: relative;
             left: -7px;
             letter-spacing: 1px;
+            margin-left: 50px;
 
             span {
                 display: inline-block;
@@ -412,7 +413,6 @@
         }
 
         @include sp {
-            column-gap: 25px;
             margin-top: 8px;
 
             p {

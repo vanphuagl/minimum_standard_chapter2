@@ -1,335 +1,346 @@
 /* --------------------------------- DESIGN --------------------------------- */
 .p-design {
-    @include sp {
-        .l-container {
-            max-width: 375px;
-        }
+//   @include sp {
+//     .l-container {
+//       max-width: 375px;
+//     }
+//   }
+  @media only screen and (max-width: 375px) {
+      .l-container {
+          max-width: 375px;
+      }
+  }
+
+  &__wrap {
+    padding-top: 123px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1205px;
+      height: 527px;
+      background-color: $gray-cl;
+      position: absolute;
+      right: 0;
+      bottom: 175px;
+      z-index: -1;
+      max-width: 75%;
     }
 
-    &__wrap {
-        padding-top: 123px;
-        position: relative;
-
-        &::after {
-            content: "";
-            width: 1205px;
-            height: 527px;
-            background-color: $gray-cl;
-            position: absolute;
-            right: 0;
-            bottom: 175px;
-            z-index: -1;
-            max-width: 75%;
-        }
-
-        @include mq(xl, max) {
-            &::after {
-                width: 390px;
-                height: 514px;
-                right: 0;
-                bottom: 35.5%;
-                max-width: 75%;
-            }
-        }
-        @include mq(lg-max, max) {
-        }
-
-        @include sp {
-            padding-top: 50px;
-
-            &::after {
-                width: 195px;
-                height: 261px;
-            }
-        }
-    }
-
-    &__img {
-        width: 1440px;
-        height: 772px;
-        position: relative;
-        max-width: 75%;
-
-        > img {
-            width: 100%;
-            height: 683px;
-            position: absolute;
-
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        @include mq(md-max, max) {
-            height: 660px;
-
-            > img {
-                height: 560px;
-            }
-        }
-        @include mq(xl, max) {
-            max-width: 96%;
-        }
-
-        @include mq(lg-max, max) {
-            // max-height: 486px;
-            > img {
-                height: 470px;
-            }
-        }
-
-        @include sp {
-            max-height: 243px;
-
-            > img {
-                height: 200px;
-            }
-        }
-    }
-
-    &__btn {
-        position: absolute;
+    @include mq(xl, max) {
+      &::after {
+        width: 390px;
+        height: 514px;
         right: 0;
-        bottom: 0;
-        display: flex;
-
-        @include sp {
-            margin-top: 18px;
-            bottom: 5px;
-            right: 2px;
-        }
+        max-width: 75%;
+      }
+    }
+    @include mq(lg-max, max) {
+      &:after {
+        bottom: 35.5%;
+      }
     }
 
-    &__prev,
-    &__next {
-        width: 53px;
-        height: 53px;
-        cursor: pointer;
-        border: unset;
-        outline: none;
-        box-shadow: 0 0 4px 1px rgba(0, 0, 0, 26%);
+    @include sp {
+      padding-top: 50px;
 
-        &:hover {
-            opacity: 0.7;
-        }
+      &::after {
+        width: 195px;
+        height: 261px;
+      }
+    }
+  }
 
-        @include sp {
-            width: 32px;
-            height: 26.5px;
-        }
+  &__img {
+    width: 1440px;
+    height: 772px;
+    position: relative;
+    max-width: 75%;
+
+    > img {
+      width: 100%;
+      height: 683px;
+      position: absolute;
+
+      opacity: 0;
+      visibility: hidden;
     }
 
-    &__next {
-        margin-left: 20px;
+    @include mq(md-max, max) {
+      height: 660px;
 
-        @include sp {
-            margin-left: 11px;
-        }
+      > img {
+        height: 560px;
+      }
+    }
+    @include mq(xl, max) {
+      max-width: 96%;
     }
 
-    &__content {
-        max-width: 1200px;
-        height: 500px;
-        margin: auto;
-        padding-left: 5px;
-
-        @include mq(md-max, max) {
-            height: 400px;
-            padding-left: 20px;
-            max-height: fit-content;
-        }
-        @include mq(xl, max) {
-            padding-left: 60px;
-        }
-        @include mq(lg-max, max) {
-        }
-
-        @include sp {
-            padding-left: 30px;
-            height: 200px;
-        }
+    @include mq(lg-max, max) {
+      // max-height: 486px;
+      height: 560px;
+      > img {
+        height: 470px;
+      }
     }
 
-    &__heading {
-        font-size: 4.8rem;
-        font-weight: 300;
-        font-family: "Oswald", sans-serif;
-        color: $black-cl;
-        text-transform: uppercase;
-        position: relative;
-        line-height: 1;
-        letter-spacing: 4.8px;
-        margin-left: -1px;
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 57px;
-            height: 1px;
-            background-color: #c7c7c7;
-            left: 0;
-            bottom: -40px;
-        }
-
-        @include sp {
-            letter-spacing: 2.25px;
-            margin-top: 14px;
-            margin-left: 2px;
-
-            &::after {
-                width: 28.5px;
-                bottom: -20px;
-            }
-        }
+    @include mq(lg, max) {
     }
 
-    &__title {
-        margin-top: 69px;
-        margin-bottom: 37px;
+    @include sp {
+      max-height: 243px;
 
-        h3 {
-            display: block;
-            font-size: 2.7rem;
-            font-weight: 400;
-            color: #231815;
-            line-height: 1.3;
-            font-family: "Yu Gothic", sans-serif;
+      > img {
+        height: 200px;
+      }
+    }
+  }
 
-            // &:first-child {
-            //     letter-spacing: 0.6px;
-            // }
-        }
+  &__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
 
-        @include sp {
-            margin-top: 34.5px;
-            margin-bottom: 20px;
-            margin-left: 1px;
+    @include sp {
+      margin-top: 18px;
+      bottom: 5px;
+      right: 2px;
+    }
+  }
 
-            h3 {
-                &:first-child {
-                    letter-spacing: 0.3px;
-                }
-            }
-        }
+  &__prev,
+  &__next {
+    width: 53px;
+    height: 53px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 26%);
+
+    &:hover {
+      opacity: 0.7;
     }
 
-    &__info {
-        p {
-            display: block;
-            font-size: 1.9rem;
-            font-weight: 300;
-            color: #231815;
-            line-height: 1.8;
-            font-family: "Yu Gothic", sans-serif;
-        }
+    @include sp {
+      width: 31px;
+      height: 31px;
+    }
+  }
 
-        @include mq(xl, max) {
-            width: 55%;
-        }
+  &__next {
+    margin-left: 20px;
 
-        @include mq(lg-max, max) {
-            width: 100%;
-        }
+    @include sp {
+      margin-left: 11px;
+    }
+  }
 
-        @include sp {
-            font-size: 2rem;
-            margin-left: 2px;
-        }
+  &__content {
+    max-width: 1200px;
+    height: 500px;
+    margin: auto;
+    padding-left: 5px;
+
+    @include mq(md-max, max) {
+      height: 400px;
+      padding-left: 20px;
+      max-height: fit-content;
+    }
+    @include mq(xl, max) {
+      padding-left: 60px;
+    }
+    @include mq(lg-max, max) {
     }
 
-    &__video {
-        position: absolute;
-        bottom: -8px;
-        right: 84px;
+    @include sp {
+      padding-left: 30px;
+      height: 200px;
+    }
+  }
 
-        iframe {
-            width: 702px;
-            height: 391px;
-            border: unset;
-            outline: none;
-            max-width: 100%;
-        }
+  &__heading {
+    font-size: 4.8rem;
+    font-weight: 300;
+    font-family: "Oswald", sans-serif;
+    color: $black-cl;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 1;
+    letter-spacing: 4.8px;
+    margin-left: -1px;
 
-        @include mq(md-max, max) {
-            iframe {
-                width: 500px;
-                height: 300px;
-            }
-        }
-        @include mq(xl, max) {
-            width: 50%;
-            right: -90px;
-
-            iframe {
-                width: 400px;
-                height: 250px;
-            }
-        }
-        @include mq(lg-max, max) {
-            display: block;
-            position: relative;
-            right: auto;
-            padding: 0 60px;
-            margin: auto;
-            margin-top: 80px;
-            width: 75%;
-            max-width: 750px;
-
-            iframe {
-                width: 100%;
-                height: 390px;
-            }
-        }
-
-        @include sp {
-            width: 100%;
-            right: auto;
-            padding: 0 30px;
-            margin-top: 40px;
-
-            iframe {
-                width: 100%;
-                height: 177px;
-            }
-        }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 57px;
+      height: 1px;
+      background-color: #c7c7c7;
+      left: 0;
+      bottom: -40px;
     }
 
-    /* ------------------------------ ANIMTE SLICK ------------------------------ */
-    .is-rightleft {
-        transform: translateX(100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    @include sp {
+      letter-spacing: 2.25px;
+      margin-top: 14px;
+      margin-left: 2px;
 
-        &.is-active {
-            transform: translateX(0);
-            opacity: 1;
-            visibility: visible;
-        }
+      &::after {
+        width: 28.5px;
+        bottom: -20px;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 69px;
+    margin-bottom: 37px;
+
+    h3 {
+      display: block;
+      font-size: 2.7rem;
+      font-weight: 400;
+      color: #231815;
+      line-height: 1.3;
+      font-family: "Yu Gothic", sans-serif;
+
+      // &:first-child {
+      //     letter-spacing: 0.6px;
+      // }
     }
 
-    .is-leftright {
-        transform: translateX(-100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    @include sp {
+      margin-top: 34.5px;
+      margin-bottom: 20px;
+      margin-left: 1px;
 
-        &.is-active {
-            transform: translateX(0);
-            opacity: 1;
-            visibility: visible;
+      h3 {
+        &:first-child {
+          letter-spacing: 0.3px;
         }
+      }
+    }
+  }
+
+  &__info {
+    p {
+      display: block;
+      font-size: 1.9rem;
+      font-weight: 300;
+      color: #231815;
+      line-height: 1.8;
+      font-family: "Yu Gothic", sans-serif;
     }
 
-    .is-topdown {
-        transform: translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-
-        &.is-active {
-            transform: translateY(0);
-            opacity: 1;
-            visibility: visible;
-        }
+    @include mq(xl, max) {
+      width: 55%;
     }
+
+    @include mq(lg-max, max) {
+      width: 100%;
+    }
+
+    @include sp {
+      font-size: 2rem;
+      margin-left: 2px;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    bottom: -8px;
+    right: 84px;
+
+    iframe {
+      width: 702px;
+      height: 391px;
+      border: none;
+      outline: none;
+      max-width: 100%;
+    }
+
+    @include mq(md-max, max) {
+      iframe {
+        width: 500px;
+        height: 300px;
+      }
+    }
+    @include mq(xl, max) {
+      width: 50%;
+      right: -90px;
+
+      iframe {
+        width: 400px;
+        height: 250px;
+      }
+    }
+    @include mq(lg-max, max) {
+      display: block;
+      position: relative;
+      right: auto;
+      padding: 0 60px;
+      margin: auto;
+      margin-top: 80px;
+      width: 75%;
+      max-width: 750px;
+
+      iframe {
+        width: 100%;
+        height: 390px;
+      }
+    }
+
+    @include sp {
+      width: 100%;
+      right: auto;
+      padding: 0 30px;
+      margin-top: 40px;
+
+      iframe {
+        width: 100%;
+        height: 177px;
+      }
+    }
+  }
+
+  /* ------------------------------ ANIMTE SLICK ------------------------------ */
+  .is-rightleft {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+
+    &.is-active {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .is-leftright {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+
+    &.is-active {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .is-topdown {
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+
+    &.is-active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
