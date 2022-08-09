@@ -98,6 +98,10 @@
             padding: 38px 50px;
             max-width: 375px;
             margin: auto;
+
+            p {
+                text-align: right;
+            }
         }
     }
 
@@ -130,7 +134,7 @@
         @include sp {
             letter-spacing: 2.25px;
             margin-left: 18px;
-            margin-top: 3px;
+            margin-top: 5px;
 
             &::after {
                 width: 37px;
@@ -152,7 +156,7 @@
         }
         
         @include sp {
-            margin-top: 29.5px;
+            margin-top: 30.5px;
             margin-left: 18px;
         }
     }
@@ -236,7 +240,18 @@
                 p {
                     font-size: 2.5rem;
                     margin-left: 10px;
+                    letter-spacing: 0.2px;
                 }
+            }
+
+            li:nth-child(3) p {
+                margin-top: 1px;
+                letter-spacing: 0;
+            }
+
+            li:nth-child(3) span {
+                margin-top: -2px;
+                line-height: 2.2;
             }
         }
     }
