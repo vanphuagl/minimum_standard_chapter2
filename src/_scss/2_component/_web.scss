@@ -46,7 +46,7 @@
                 font-size: 4.6rem;
                 color: #252a6d;
                 display: inline-block;
-                font-family: "Kozuka Mincho Pr6N", sans-serif;
+                font-family: "Kozuka Mincho Pr6N", serif;
                 letter-spacing: -0.5px;
             }
         }
@@ -383,8 +383,8 @@
         background-color: #231815;
         height: 214px;
         row-gap: 22px;
-        margin-left: 2px;
-        margin-top: 2px;
+        // margin-left: 2px;
+        // margin-top: 2px;
 
         h3 {
             font-size: 2rem;

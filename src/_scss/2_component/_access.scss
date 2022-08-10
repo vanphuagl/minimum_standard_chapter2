@@ -51,7 +51,6 @@
         width: 50%;
         background-color: $gray-cl;
         text-align: center;
-        // padding: 144px 194px 20px 214px;
         padding: 145px 180px 20px;
 
         p {
@@ -62,28 +61,21 @@
             text-align: right;
             margin-right: 45px;
             font-family: "Yu Gothic", sans-serif;
-
-            // position: sticky;
-            // top: 0;
-            // left: 0;
         }
 
         @include mq(xl-max, max) {
             text-align: center;
-            padding: 144px 60px 30px;
 
             > p {
-                text-align: unset;
-                padding-left: 120px;
             }
-        }
-
+        } 
+        
         @include mq(md-max, max) {
             padding: 144px 30px 30px;
 
             p {
-                // text-align: center;
                 margin: 0;
+                padding-left: 0;
             }
         }
 
@@ -103,7 +95,7 @@
             padding: 80px 100px;
 
             p {
-                text-align: center;
+                // text-align: center;
             }
         }
 
@@ -192,7 +184,7 @@
                 background-color: #565f64;
                 width: 120px;
                 height: 47px;
-                line-height: 1.8;
+                line-height: 2;
                 margin-right: 20px;
                 padding-left: 6px;
 
@@ -224,27 +216,25 @@
         }
 
         @include mq(xl-max, max) {
-            padding-left: 120px;
         }
-
+        
         @include mq(xl, max) {
-            padding-left: 0;
-
             li {
                 span {
                     min-width: 120px;
                     margin-right: 0;
                     padding-left: 0;
                 }
-
+                
                 p {
                     // font-size: 2.3rem;
                     margin-left: 10px;
                 }
             }
         }
-
+        
         @include mq(lg-max, max) {
+            padding-left: 0;
             position: relative;
             top: 0;
             left: 15%;
