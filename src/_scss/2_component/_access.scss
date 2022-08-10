@@ -62,6 +62,20 @@
             text-align: right;
             margin-right: 45px;
             font-family: "Yu Gothic", sans-serif;
+
+            // position: sticky;
+            // top: 0;
+            // left: 0;
+        }
+
+        @include mq(xl-max, max) {
+            text-align: center;
+            padding: 144px 60px 30px;
+
+            > p {
+                text-align: unset;
+                padding-left: 120px;
+            }
         }
 
         @include mq(md-max, max) {
@@ -150,11 +164,11 @@
         margin-top: 55px;
         margin-left: -58px;
         font-family: "Yu Gothic", sans-serif;
-        
+
         @include mq(lg-max, max) {
             margin-left: 0;
         }
-        
+
         @include sp {
             margin-top: 30.5px;
             margin-left: 18px;
@@ -180,10 +194,16 @@
                 height: 47px;
                 line-height: 1.8;
                 margin-right: 20px;
+                padding-left: 6px;
 
-                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
-                    line-height: 2.2;   
+                @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                    line-height: 2.2;
                 }
+            }
+
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                margin-right: -50px;
             }
 
             p {
@@ -203,11 +223,18 @@
             letter-spacing: 0;
         }
 
+        @include mq(xl-max, max) {
+            padding-left: 120px;
+        }
+
         @include mq(xl, max) {
+            padding-left: 0;
+
             li {
                 span {
                     min-width: 120px;
                     margin-right: 0;
+                    padding-left: 0;
                 }
 
                 p {
