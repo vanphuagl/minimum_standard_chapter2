@@ -68,17 +68,35 @@
 
             > p {
             }
-        } 
+        }
+
+        @media only screen and (max-width: 1860px) {
+            padding: 144px 150px 30px;
+        }
+        @media only screen and (max-width: 1750px) {
+            padding: 144px 125px 30px;
+        }
+        @media only screen and (max-width: 1670px) {
+            padding: 144px 100px 30px;
+        }
         
         @include mq(md-max, max) {
-            padding: 144px 30px 30px;
+            // padding: 144px 30px 30px;
 
             p {
                 margin: 0;
                 padding-left: 0;
             }
         }
-
+        @media only screen and (max-width: 1470px) {
+            padding: 144px 80px 30px;
+        }
+        @media only screen and (max-width: 1365px) {
+            padding: 144px 55px 30px;
+        }
+        @media only screen and (max-width: 1260px) {
+            padding: 144px 30px 30px;
+        }
         @include mq(xl, max) {
             width: 50%;
             padding: 40px 10px;
